@@ -1,0 +1,30 @@
+{
+  "name": "ausenco",
+  "version": "1.0.0",
+  "description": "Pagina Web para Wandel",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "gulp": "^3.9.1",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wandel",
+    "galtec",
+    "web"
+  ],
+  "author": "Galtec - Alonso Huayta Laura",
+  "license": "ISC"
+}

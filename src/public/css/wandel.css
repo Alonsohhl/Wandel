@@ -1,0 +1,389 @@
+/** Custom styles specifically for Wandel **/
+
+.center {
+    text-align:center;
+    margin:0 auto;
+}
+
+.title-underline {
+    border-bottom:2px solid #dfdfdf !important;
+    margin:0 0 40px;
+    padding:0 0 25px 0;
+}
+
+.left-content-spacing {
+
+    padding-left: 45px;
+}
+
+.widgetContainer img {
+
+}
+
+.featured-heading 
+{
+    border-bottom: 2px solid #e9e5e2;
+    padding: 20px 0 13px 0;
+    margin: 0 0 21px 0; 
+}
+
+.author{
+    color: #ec8c23;
+}
+
+.expert-service-tree-heading {
+    margin: 0 0 10px 0 !important;
+    font-size: 25px;
+}
+
+.white {
+
+    color:#fff !important
+}
+
+.border-grey {
+        border: 1px solid #d7d7d7;
+}
+
+.industrial-text {
+    color: #4d9f45;
+}
+
+.career-red {
+    color: #c4122f !important;
+}
+
+.warm_putty {
+    color:#978b82 !important;
+}
+
+h4 {
+    line-height:1.3
+}
+
+.careers-list ul {
+    margin: 10px 0px 30px 15px;
+    padding-left: 30px;
+}
+
+.careers-list ul li{
+    line-height:1.8em;
+  
+}
+
+.border-bottom-heading {
+    border-bottom: 2px solid #e9e5e2;
+    padding: 20px 0 13px 0;
+    margin: 0 0 21px 0;
+}
+
+
+.careers-list ul li::before {
+    content: "";
+    background-color:#c4122f !important;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 12px 0 10px 40px;
+    position: absolute;
+    left: 0;
+}
+
+
+[cktarget="true"]  ul,[cktarget="true"]  ol {
+    margin: 20px 30px !important;
+    padding-left: 15px!important;
+}
+
+
+[cktarget="true"]  li {
+    display: list-item;
+    margin-bottom: 5px;
+    font-size: 1em;
+    position:relative;
+    padding-left:30px;
+}
+
+
+[cktarget="true"] ul > li::before {
+    content: "";
+    background-color: #000;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0 10px 0;
+    position: absolute;
+    left: 0;
+    top:7px;
+    margin:auto;
+}
+
+[cktarget="true"] ul ul{
+    list-style-type:circle;
+}
+[cktarget="true"] ul ul > li::before{
+    display:none;
+}
+
+[cktarget="true"] ul.twocolumnlist{
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+
+.putty-bg {
+padding: 30px 15px 30px 25px;
+background-color: #e3e2e1;
+}
+
+
+.no-margin {
+    margin:0px !important;
+    padding:0px !important;
+}
+
+
+.height {
+    height:100% !important;
+}
+
+
+
+.my-border {
+    border: 1px solid #d7d7d7;
+    margin-bottom: 30px;
+    padding: 20px 15px 0px 15px;
+    text-align: center;
+}
+
+
+.grey-box {
+    border: 1px solid #d7d7d7;
+    margin-bottom: 30px;
+    padding: 20px 15px 0px 15px;
+    text-align: center;
+}
+
+.border-box-item img {
+    text-align:center;
+    padding:20px 0 0 0 0;
+}
+
+
+
+
+/** Margin Helper Classes **/
+.m10  { margin:  10px }
+.mt10 { margin-top:    10px }
+.mr10 { margin-right:  10px }
+.mb10 { margin-bottom: 10px }
+.ml10 { margin-left:   10px }
+
+.m15 { margin:  15px }
+.mt15 { margin-top:    15px }
+.mr15 { margin-right:  15px }
+.mb15 { margin-bottom: 15px }
+.ml15 { margin-left:   15px }
+
+.m20  { margin:  20px }
+.mt20 { margin-top:    20px }
+.mr20 { margin-right:  20px }
+.mb20 { margin-bottom: 20px }
+.ml20 { margin-left:   20px }
+
+.m25  { margin:  25px }
+.mt25 { margin-top:    25px }
+.mr25 { margin-right:  25px }
+.mb25 { margin-bottom: 25px }
+.ml25 { margin-left:   25px }
+
+.m30  { margin:  30px }
+.mt30 { margin-top:    30px }
+.mr30 { margin-right:  30px }
+.mb30 { margin-bottom: 30px }
+.ml30 { margin-left:   30px }
+
+.m40  { margin:  40px }
+.mt40 { margin-top:    40px }
+.mr40 { margin-right:  40px }
+.mb40 { margin-bottom: 40px }
+.ml40 { margin-left:   40px }
+
+.m45  { margin:  45px }
+.mt45 { margin-top:    45px }
+.mr45 { margin-right:  45px }
+.mb45 { margin-bottom: 45px }
+.ml45 { margin-left:   45px }
+
+.m50  { margin:  50px }
+.mt50 { margin-top:    50px }
+.mr50 { margin-right:  50px }
+.mb50 { margin-bottom: 50px }
+.ml50 { margin-left:   50px }
+
+.m60  { margin:  60px }
+.mt60 { margin-top:    60px }
+.mr60 { margin-right:  60px }
+.mb60 { margin-bottom: 60px }
+.ml60 { margin-left:   60px }
+
+.m70  { margin:  70px }
+.mt70 { margin-top:    70px }
+.mr70 { margin-right:  70px }
+.mb70 { margin-bottom: 70px }
+.ml70 { margin-left:   70px }
+
+.m80  { margin:  80px }
+.mt80 { margin-top:    80px }
+.mr80 { margin-right:  80px }
+.mb80 { margin-bottom: 80px }
+.ml80 { margin-left:   80px }
+
+.m90  { margin:  90px }
+.mt90 { margin-top:    90px }
+.mr90 { margin-right:  90px }
+.mb90 { margin-bottom: 90px }
+.ml90 { margin-left:   90px }
+
+.m100  { margin:  100px }
+.mt100 { margin-top:    100px }
+.mr100 { margin-right:  100px }
+.mb100 { margin-bottom: 100px }
+.ml100 { margin-left:   100px }
+
+
+
+
+/** Padding Helper Classes **/
+.p10  {padding:  10px }
+.pt10 { padding-top:    10px }
+.pr10 { padding-right:  10px }
+.pb10 { padding-bottom: 10px }
+.pl10 { padding-left:   10px }
+
+.p15  {padding:  15px }
+.pt15 { padding-top:    15px }
+.pr15 { padding-right:  15px }
+.pb15 { padding-bottom: 15px }
+.pl15 { padding-left:   15px }
+
+.p20  {padding:  20px }
+.pt20 { padding-top:    20px }
+.pr20 { padding-right:  20px }
+.pb20 { padding-bottom: 20px }
+.pl20 { padding-left:   20px }
+
+.p25   {padding:  24px }
+.pt25 { padding-top:    25px }
+.pr25 { padding-right:  25px }
+.pb25 { padding-bottom: 25px }
+.pl25 { padding-left:   25px }
+
+.p30  {padding:  30px }
+.pt30 { padding-top:    30px }
+.pr30 { padding-right:  30px }
+.pb30 { padding-bottom: 30px }
+.pl30 { padding-left:   30px }
+
+.p40  {padding:  40px }
+.pt40 { padding-top:    40px }
+.pr40 { padding-right:  40px }
+.pb40 { padding-bottom: 40px }
+.pl40 { padding-left:   40px }
+
+.p45  {padding:  45px }
+.pt45 { padding-top:    45px }
+.pr45 { padding-right:  45px }
+.pb45 { padding-bottom: 45px }
+.pl45 { padding-left:   45px }
+
+.p50  {padding:  50px }
+.pt50 { padding-top:    50px }
+.pr50 { padding-right:  50px }
+.pb50 { padding-bottom: 50px }
+.pl50 { padding-left:   50px }
+
+.p60  {padding:  60px }
+.pt60 { padding-top:    60px }
+.pr60 { padding-right:  60px }
+.pb60 { padding-bottom: 60px }
+.pl60 { padding-left:   60px }
+
+.p70  {padding:  70px }
+.pt70 { padding-top:    70px }
+.pr70 { padding-right:  70px }
+.pb70 { padding-bottom: 70px }
+.pl70 { padding-left:   70px }
+
+.p80  {padding:  80px }
+.pt80 { padding-top:    80px }
+.pr80 { padding-right:  80px }
+.pb80 { padding-bottom: 80px }
+.pl80 { padding-left:   80px }
+
+.p90  {padding:  90px }
+.pt90 { padding-top:    90px }
+.pr90 { padding-right:  90px }
+.pb90 { padding-bottom: 90px }
+.pl90 { padding-left:   90px }
+
+.p100  { padding:  100px }
+.pt100 { padding-top:  100px }
+.pr100 { padding-right:  100px }
+.pb100 { padding-bottom: 100px }
+.pl100 { padding-left:   100px }
+
+
+
+@media (min-width: 992px) {
+    .is-md-table-row-wrapper{
+        display: table;
+        table-layout: fixed;
+        height: 100%;
+        width: 100%;
+        border-spacing:15px 0;
+    }
+    .is-md-table-row-wrapper >  [class*="col-"]{
+        float: none;
+        display: table-cell;
+        height: 100%;
+        vertical-align: middle;
+    }
+    
+}
+
+.rules-item-wrap{
+    margin-bottom:15px;
+}
+
+.rules-item-wrap > div{
+    border: 1px solid #d7d7d7;
+}
+
+
+.webilize-validation-error {
+    border: #ff171a solid thin;
+}
+
+
+.profile-inline-img {
+    display: inline-block;
+    max-width: 100%;
+    border: 2px solid #eee;
+    float: left;
+    margin: 0 18px 11px 0
+}
+
+
+.meet-the-expert img {
+    display: inline-block;
+    max-width: 100%;
+    border: 2px solid #eee;
+    float: left;
+    margin: 0 18px 11px 0;
+}

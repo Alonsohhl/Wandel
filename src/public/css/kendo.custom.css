@@ -1,0 +1,190 @@
+.k-pager-wrap {
+  font-family: 'Akkurat', Arial, Helvetica Neue, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+.k-autocomplete.k-state-focused, .k-dropdown-wrap.k-state-focused, .k-multiselect.k-header.k-state-focused, .k-numeric-wrap.k-state-focused, .k-picker-wrap.k-state-focused, .k-textbox:focus {
+  box-shadow: none; }
+
+/*Pagination*/
+.k-pager-wrap {
+  text-align: center;
+  font-size: 20px;
+  border: 0;
+  padding-left: 0; }
+
+.k-pager-wrap .k-link {
+  border-radius: 0 !important; }
+
+.k-pager-wrap .k-pager-nav {
+  border: 1px solid #c2b8af; }
+
+.k-pager-numbers .k-link {
+  border: 0; }
+
+.k-pager-wrap .k-link:hover, .k-pager-wrap .k-link:active, .k-pager-wrap .k-link:focus {
+  background-color: #c2b8af;
+  color: #fff;
+  border-color: #c2b8af; }
+  .k-pager-wrap .k-link:hover .k-icon, .k-pager-wrap .k-link:active .k-icon, .k-pager-wrap .k-link:focus .k-icon {
+    color: #fff; }
+
+.page-color1 .k-pager-wrap .k-link:hover, .page-color1 .k-pager-wrap .k-link:active, .page-color1 .k-pager-wrap .k-link:focus {
+  background-color: #ec8c23;
+  border-color: #ec8c23; }
+
+.page-color3 .k-pager-wrap .k-link:hover, .page-color3 .k-pager-wrap .k-link:active, .page-color3 .k-pager-wrap .k-link:focus {
+  background-color: #4d9f45;
+  border-color: #4d9f45; }
+
+.page-color4 .k-pager-wrap .k-link:hover, .page-color4 .k-pager-wrap .k-link:active, .page-color4 .k-pager-wrap .k-link:focus {
+  background-color: #0980ba;
+  border-color: #0980ba; }
+
+.k-pager-wrap .k-link.k-pager-first {
+  margin-left: 0; }
+.k-pager-wrap .k-link.k-pager-last {
+  margin-right: 0; }
+
+.k-pager-numbers .k-state-selected {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 4px solid #c2b8af;
+  color: #c2b8af;
+  box-shadow: none;
+  font-size: 20px; }
+
+.page-color1 .k-state-selected {
+  color: #ec8c23;
+  border-color: #ec8c23; }
+
+.page-color3 .k-state-selected {
+  color: #4d9f45;
+  border-color: #4d9f45; }
+
+.page-color4 .k-state-selected {
+  color: #0980ba;
+  border-color: #0980ba; }
+
+.k-link:link, .k-link:visited, .k-nav-current.k-state-hover .k-link {
+  color: #000; }
+
+.k-pager-wrap .k-link {
+  height: 38px;
+  margin: 0 8px;
+  width: 38px;
+  background-color: transparent;
+  line-height: 38px;
+  float: none;
+  display: inline-block; }
+
+.k-pager-wrap .k-pager-numbers {
+  display: inline-block;
+  z-index: 200; }
+
+.k-pager-numbers .k-state-selected {
+  height: 38px;
+  margin: 0 8px;
+  width: 38px;
+  line-height: 38px; }
+
+.k-pager-wrap > a.k-state-disabled:hover {
+  background: #c2b8af; }
+
+.page-color1 .k-pager-wrap > a.k-state-disabled:hover {
+  background: #ec8c23; }
+
+.page-color3 .k-pager-wrap > a.k-state-disabled:hover {
+  background: #4d9f45; }
+
+.page-color4 .k-pager-wrap > a.k-state-disabled:hover {
+  background: #0980ba; }
+
+.k-pager-info {
+  float: none;
+  color: #000;
+  line-height: 40px;
+  display: none; }
+
+.k-icon.k-i-seek-w, .k-icon.k-i-arrow-w, .k-icon.k-i-seek-e, .k-icon.k-i-arrow-e {
+  font: normal normal normal 14px/1 FontAwesome;
+  height: 100%;
+  display: block;
+  width: 38px;
+  font-size: 28px; }
+
+.k-i-seek-w::before {
+  content: "\f100"; }
+
+.k-i-arrow-w::before {
+  content: "\f104"; }
+
+.k-i-seek-e::before {
+  content: "\f101"; }
+
+.k-i-arrow-e::before {
+  content: "\f105"; }
+
+.k-loading-image {
+  background-image: url("../images/ausenco/loader/content-loader.gif");
+  height: 50px;
+  background-size: 160px; }
+
+.map-container .k-loading-image {
+  height: 100%; }
+
+.map-container #empty-mask .k-loading-text {
+  text-indent: 0px;
+  text-align: center;
+  display: block;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  font-weight: bold;
+  line-height: 37em; }
+
+.k-loading-mask {
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 1000; }
+
+/*dropdown list*/
+.k-popup .k-list .k-item {
+  line-height: 1.2;
+  vertical-align: middle;
+  min-height: unset;
+  padding: 6px 0; }
+
+@media only screen and (min-width: 1025px) {
+  .k-pager-wrap {
+    float: none !important; } }
+@media only screen and (max-width: 1024px) {
+  .k-pager-wrap {
+    width: 100%;
+    margin: auto;
+    text-align: center; }
+
+  .k-pager-wrap .k-link {
+    float: left; }
+
+  .k-webkit .k-pager-numbers .k-current-page .k-link {
+    border-right: 0;
+    text-align: center;
+    margin-right: 8px; }
+
+  .k-pager-wrap .k-pager-numbers {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    left: 4.6em; }
+
+  .k-pager-nav.k-pager-first {
+    border-right: 1px solid #c2b8af !important; }
+
+  .k-webkit .k-pager-numbers + .k-link {
+    margin-left: 3.8em; } }
+/*List view border*/
+.search-page .k-widget {
+  border-width: 0; }
+
+/*# sourceMappingURL=kendo.custom.css.map */

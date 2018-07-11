@@ -1,0 +1,2953 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--_LayoutPristine-->
+    <meta charset="utf-8">
+    <!-- <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"d43fd09007","applicationID":"115825038","transactionName":"M1VUNUdWWRVZVxFfXQofezd2GH8JVVEmWVwQQlkNWVJFSXFaAVNK","queueTime":1,"applicationTime":46,"agent":"","atts":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script> -->
+    <title>Wandel Inversiones - Experiencia y Servicio con los mejores Insumos</title>
+
+    <meta name="description" content="Wandel Inversiones SAC, es una empresa de comercialización de insumos Químicos, para la elaboración de productos de limpieza">
+
+    <meta name="keywords" content="Wandel, insumos, quimicos, limpieza">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Galtec">
+
+    <!-- <link rel="shortcut icon" href="/Content/images/ausenco/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="/Content/images/ausenco/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/Content/images/ausenco/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/Content/images/ausenco/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/Content/images/ausenco/apple-touch-icon-57x57.png"> -->
+
+    <!-- <link href="/Content/bootstrap-3.3.7/bootstrap.css" rel="stylesheet" /> -->
+    <!-- <link href="/Content/app/Font-Awesome-master/css/font-awesome.min.css" rel="stylesheet" /> -->
+    <!-- <link href="/Content/app/flexslider.css" rel="stylesheet" /> -->
+    <!-- <link href="/Content/app/style.css" rel="stylesheet" /> -->
+    <!-- <link href="/Content/app/Ausenco.css" rel="stylesheet" /> -->
+    <!-- <link href="/Content/app/animate.css" rel="stylesheet" />
+    <link href="/Content/app/responsive.css" rel="stylesheet" />
+    <link href="/Content/app/print.css" rel="stylesheet" />
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/font-awesome.min.css" rel="stylesheet" />
+<link href="css/flexslider.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/wandel.css" rel="stylesheet" />
+<link href="css/animate.css" rel="stylesheet" />
+<link href="css/responsive.css" rel="stylesheet" />
+<link href="css/responsi.css" rel="stylesheet" />
+<link href="css/print.css" rel="stylesheet" />
+<link href="css/style2.css" rel="stylesheet" />
+<link href="css/layers.css" rel="stylesheet" />
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    
+</head>
+
+<body class="no-js">
+<!--     
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="/Scripts/bootstrap-3.3.7/bootstrap.min.js"></script>
+    <script>
+        document.getElementsByTagName("body")[0].className = document.getElementsByTagName("body")[0].className.replace("no-js", '');
+    </script> -->
+
+    
+    <link href="/Content/kendo/css?v=Dcz6ngeimvMpP4dcD8GbxVHkvSMBf_T8yxBXENzn1VY1" rel="stylesheet"/>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="/Scripts/bootstrap-3.3.7/bootstrap.min.js"></script>
+    <script>
+        document.getElementsByTagName("body")[0].className = document.getElementsByTagName("body")[0].className.replace("no-js", '');
+    </script>
+
+
+    
+    <!-- <script src="/Scripts/kendo/kendo.custom.min.js"></script> -->
+    <!-- <script src="/Scripts/kendo/kendo.aspnetmvc.min.js"></script> -->
+    
+
+
+        <!-- <script src="/Scripts/jquery.flexslider.js"></script> -->
+        <script src="js/restive.min.js"></script>
+        <script src="js/custom.js"></script>
+        <link href="css/kendo.custom.css" rel="stylesheet" />
+
+        <!-- //////////////////////////////////////////////////////// -->
+        <script src="js/jquery.flexslider.js"></script>
+    
+
+    
+
+    
+
+    <span id="popupNotification"></span>
+<div style="display: none" id="secure-messages">
+
+
+</div>
+
+    
+<header class="page-is-home">
+    <nav role="navigation" class="navbar-fixed-top webilizeHeader" data-spy="affix" data-offset-top="1">
+        <div class="outer-menu">
+            <div id="menuToggle">
+                <!-- A hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
+                <input id="menuCheckbox" type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <!--  Button sits above the slide out menu -->
+            </div>
+            <div id="menuDiv" class="slide-out-menu">
+                
+            </div>
+        </div>
+        <div class="site-logo">
+            <a href="/">
+            <img id="blackLogo" class="black-logo" src="/Content/images/ausenco/logos/logo.png" />
+            <img id="whiteLogo" class="white-logo" src="images/logos/logo-white.png" />
+            </a>
+        </div>
+        <div class="main-search-icon mainSearchIconEl"></div>
+        <div class="main-search font-16-22">
+            <div class="searchEl">
+                <form id="searchHeaderForm" action="/search">
+                    <input tabindex="-1" id="searchHeaderBox" name="q" type="text" placeholder="What are you looking for?" style="width: 100%;" />
+                </form>
+                <script>
+                    $(document).ready(function () {
+
+                        function getLoc() {
+                            var path = window.location.pathname;
+                            if (!path)
+                                return "/en";
+            
+                            var pathItems = path.split('/');
+                            if (!pathItems || pathItems.length <= 1)
+                                return "/en";
+
+                            var validLocales = ["en", "fr", "es", "pt"];
+                            var validatedLocale = "en";
+                            validLocales.forEach(function(l) {
+                                if (l === pathItems[1])
+                                    validatedLocale = pathItems[1];
+                            });
+                            return "/" + validatedLocale;
+                        }
+
+                        function preventPost(e) {
+                            if (e.keyCode === 13) {
+                                $('#searchHeaderForm').attr('action', getLoc() + "/search/");
+                                $("#searchHeaderForm").submit();
+                            }
+                        }
+
+                        function isEmpty(str) {
+                            return (!str || 0 === str.length);
+                        }
+
+                        $("#searchHeaderBox").kendoComboBox({
+                            filter: "contains",
+                            autoBind: false,
+                            highlightFirst: false,
+                            minLength: 2,
+                            noDataTemplate: '',
+                            dataSource: {
+                                serverFiltering: true,
+                                transport: {
+                                    read: {
+                                        url: getLoc() + "/search/autocomplete",
+                                        dataType: "json"
+                                    }
+                                }
+                            },
+                            change: function (e) {
+                                var widget = e.sender;
+                                if (widget.value() && widget.select() === -1) {
+                                    var combobox = $("#searchHeaderBox").data("kendoComboBox");
+                                    combobox.value(widget.value());
+                                } else {
+                                    var wrapped = widget.value();
+                                    if (!isEmpty(wrapped)) {
+                                        if ('"' === wrapped || !('"' === wrapped[0] && '"' === wrapped.slice(-1))) { wrapped = '"' + wrapped + '"'; }
+                                        var combobox = $("#searchHeaderBox").data("kendoComboBox");
+                                        combobox.value(wrapped);
+                                    }
+                                }
+                            }
+                        });
+                        var searchBox = $("#searchHeaderBox").data("kendoComboBox");
+                        searchBox.input.keydown(preventPost);
+                        //searchBox.input.focus();
+                    });
+                </script>
+            </div>
+        </div>
+
+        <div class="site-breadcrumb">
+            <ul>
+                <li><a class="Akk" href="./">Home</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="home-bar">
+            <div class="home-bar-box">
+                
+
+<div class="dropdown home-bar-item site-location">
+    <button class="btn btn-primary dropdown-toggle Akk" type="button" data-toggle="dropdown">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <span style="text-transform: uppercase; color: #fff">
+            Global
+        </span>
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </button>
+    <ul class="dropdown-menu" id="main-region-dropdown">
+            <li><a href="/samples/changeregion?region=Asia&amp;returnUrl=%2F" style="text-transform: uppercase">Asia</a></li>
+            <li><a href="/samples/changeregion?region=Africa&amp;returnUrl=%2F" style="text-transform: uppercase">Africa</a></li>
+            <li><a href="/samples/changeregion?region=Australia%20Pacific&amp;returnUrl=%2F" style="text-transform: uppercase">Australia Pacific</a></li>
+            <li><a href="/samples/changeregion?region=Middle%20East&amp;returnUrl=%2F" style="text-transform: uppercase">Middle East</a></li>
+            <li><a href="/samples/changeregion?region=Russia&amp;returnUrl=%2F" style="text-transform: uppercase">Russia</a></li>
+            <li><a href="/samples/changeregion?region=Europe&amp;returnUrl=%2F" style="text-transform: uppercase">Europe</a></li>
+            <li><a href="/samples/changeregion?region=North%20America&amp;returnUrl=%2F" style="text-transform: uppercase">North America</a></li>
+            <li><a href="/samples/changeregion?region=South%20America&amp;returnUrl=%2F" style="text-transform: uppercase">South America</a></li>
+    </ul>
+</div>
+                <div class="dropdown home-bar-item site-language Akk">
+                    <button class="btn btn-primary dropdown-toggle" id="localeButton" type="button" data-toggle="dropdown">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>EN
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu" id="languagesDdl">
+                    </ul>
+                </div>
+                        <ul class="home-bar-item site-social-icons">
+                            <li><a target="_blank" href="https://www.linkedin.com/company-beta/48413"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/Ausenco/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/ausenco"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/user/AusencoVideos"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/ausenco"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+
+                    <a id="headerSearch" class="home-bar-item home-search-link mainSearchIconEl" href="javascript:;"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script type="text/javascript">
+
+    var jsonString = '{ "title": "menu",' +
+        '"numberElements":"7",' +
+        '"finalElement":"false",' +
+        '"elements": [' +
+        '{ "title": "Industry Sectors", "finalElement":"false", "numberElements":"3", "elements": [' +
+        '{ "title": "Minerals & Metals", "finalElement": "false", "numberElements":"4", "elements": [' +
+        '{"title":"Commodities", "finalElement":"true", "link":"/home/mineralsmetals"},' +
+        '{"title":"Consulting", "finalElement":"false", "numberElements":"7", "elements": [' +
+        '{"title":"Mining Consulting", "finalElement":"true", "link":"/"},' +
+        '{"title":"Environmental & Permitting", "finalElement":"false", "numberElements":"5", "elements": [' +
+        '{"title":"Environmental & Social Solutions", "finalElement":"true", "link":"/"},' +
+        '{"title":"Geotechnical & Civil Solutions", "finalElement":"true", "link":"/"},' +
+        '{"title":"Sustainability Solutions", "finalElement": "true", "link":"/" },' +
+        '{"title":"Tailings and Mine Waste Management", "finalElement": "true", "link":"/" },' +
+        '{"title":"Water Management", "finalElement":"true", "link":"/"} ]},' +
+        '{"title":"Process Facilities", "finalElement":"true", "link":"/"},' +
+        '{"title":"Pipelines", "finalElement":"true", "link":"/"},' +
+        '{"title":"Transportation", "finalElement":"true", "link":"/"},' +
+        '{"title":"Ports & Terminals", "finalElement":"true", "link":"/"},' +
+        '{"title":"Specialist Advisory", "finalElement":"true", "link":"/"} ]},' +
+        '{"title":"Project Delivery", "finalElement":"true", "link":"/"},' +
+        '{"title":"Asset Operations & Maintenance", "finalElement":"true", "link":"/"} ]},' +
+        '{"title":"Oil & Gas", "finalElement":"false", "numberElements":"4", "elements": [' +
+        '{"title":"Commodities", "finalElement":"true", "link":"/"},' +
+        '{"title":"Consulting", "finalElement":"true", "link":"/"},' +
+        '{"title":"Project Delivery", "finalElement":"true", "link":"/"},' +
+        '{"title":"Asset Operation & Maintenance", "finalElement":"true", "link":"/"} ]},' +
+        '{"title":"Industrial", "finalElement":"false", "numberElements":"2", "elements": [' +
+        '{"title":"Consulting", "finalElement":"true", "link":"/"},' +
+        '{"title":"Project Delivery", "finalElement":"true", "link":"/"} ]}' +
+        ']},' +
+        '{"title":"Our Experts", "finalElement":"true", "link":"/"},' +
+        '{"title":"Featured Projects", "finalElement":"true", "link":"/"},' +
+        '{"title":"Insights & News", "finalElement":"false", "numberElements":"4", "elements": [' +
+        '{"title":"News", "finalElement":"true", "link":"/"},' +
+        '{"title":"Insight Articles", "finalElement":"true", "link":"/"},' +
+        '{"title":"Technical Papers", "finalElement":"true", "link":"/"},' +
+        '{"title":"Downloads", "finalElement":"true", "link":"/"} ]},' +
+        '{"title":"About Us", "finalElement":"false", "numberElements":"8", "elements": [' +
+        '{"title":"Our Values", "finalElement":"true", "link":"/"},' +
+        '{"title":"Our History and Heritage", "finalElement":"true", "link":"/"},' +
+        '{"title":"Leadership Teams", "finalElement":"true", "link":"/"},' +
+        '{"title":"Board of Directors", "finalElement":"true", "link":"/"},' +
+        '{"title":"Corporate Governance", "finalElement":"true", "link":"/"},' +
+        '{"title":"Sustainability", "finalElement":"false", "numberElements":"6", "elements": [' +
+        '{"title":"Health, Safey & Wellbeing", "finalElement":"true", "link":"/"},' +
+        '{"title":"Environment", "finalElement":"true", "link":"/"},' +
+        '{"title":"Community", "finalElement":"true", "link":"/"},' +
+        '{"title":"Governance & Assurance", "finalElement":"true", "link":"/"},' +
+        '{"title":"Design & Delivery", "finalElement":"true", "link":"/"},' +
+        '{"title":"People", "finalElement":"true", "link":"/"} ]},' +
+        '{"title":"Office Locations", "finalElement":"true", "link":"/"},' +
+        '{"title":"Joint Vectures/Alliances", "finalElement":"true", "link":"/"} ]},' +
+        '{"title":"Careers", "finalElement":"true", "link":"/"},' +
+        '{"title":"Contact Us", "finalElement":"true", "link":"/"} ]}'
+
+    var menuObject; // tree/node object representing menu
+    var currentNode;  // current open node in menu
+    var isAnimating = false;  // double clicks break everything!!
+	var selectedElements = [];
+	var pageIsInner = false
+	var breadcrumb;
+
+    var currentPage = null;
+
+    $(function () {
+
+        // menu should start closed
+        if ($(this).find("input[type='checkbox']").is(':checked')) {
+            $(this).find("input[type='checkbox']").prop('checked', false);
+        }
+
+        // close menu when click outside
+        $(document).click(function (event) {
+            if ($('#menuCheckbox').is(':checked')) {
+                if (!$(event.target).closest('#menuDiv').length && !$(event.target).closest('#menuToggle').length) {
+                    closeMenu();
+                    $(this).find("input[type='checkbox']").prop('checked', false);
+                }
+            }
+        })
+        getJsonString();
+    });
+
+    function getJsonString() {
+        $.get("/menu", function (data) {
+            setUpMenu(data);
+        });
+    }
+
+    function setUpMenu(jsonString) {
+        // Setup menu objects and html on start
+        getMenuObject(jsonString);
+
+        if (typeof(isDesktop) == 'function' && isDesktop()) {
+            setUpInitialDesktopMenus();
+        } else {
+            setUpInitialMobileMenus();
+        }
+        setUpEvents();
+
+		var linkResult = getLinkFromPageUrl();
+        var link = linkResult ? linkResult.link : "";
+		if (link != "" && link != null) {
+			$.post("/api/breadcrumbs?slug=" + link + "&locale=" + linkResult.locale,
+				{
+					slug: link,
+					max_items: 3
+				},
+				function (data) {
+					setUpBreadcrumb(data);
+				}
+			);
+		}
+		
+        //currentPage = searchForCurrentPage("Board-of-Directors", menuObject);
+	}
+
+	function setUpBreadcrumb(data) {
+		if (data.items) {
+			var siteBreadcrumb = $(".site-breadcrumb ul");
+			breadcrumb = data.items;
+			for (var i = 0; i < breadcrumb.length; i++) {
+				var node = breadcrumb[i];
+				if (node.Slug != "" && node.Slug != null && node.Slug != "###") {
+					siteBreadcrumb.append("<li><div>/</div></li><li><a class='Akk' href='" + node.Slug + "'>" + node.Name + "</a></li>");
+				}				
+			}
+			if (breadcrumb.length > 0 && menuHasChildrenForNode(breadcrumb[0].Name)) {
+				pageIsInner = true;
+			}
+		}		
+	}
+
+	function menuHasChildrenForNode(node) {
+		for (var i = 0; i < menuObject.children.length; i++) {
+			var child = menuObject.children[i];
+			if (child.title == node) {
+				if (child.numberElements > 0) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+		}
+		return false;
+	}
+
+    function searchForCurrentPage(link, menu) {
+        for (var i = 0; i < menu.numberElements; i++) {
+            var submenu = menu.children[i];
+            if (submenu.link == link) {
+                return submenu;
+            } else {
+                var submenuPage = searchForCurrentPage(link, submenu);
+                if (submenuPage != null) {
+                    return submenuPage;
+                }
+            }
+        }
+        return null;
+    }
+
+    function setUpInitialMobileMenus() {
+        // create initial menu for slide out pages on a mobile sized screen
+        var menuDiv = $("#menuDiv");
+
+        // final slide out panel must have menu holder for multiple slide down menus
+        var menu = "<div id='slideOut1' class='slide-out-section grey-background'>" +
+            "<div id='menuHolder' class='menu-holder grey-background'>" +
+            "<ul id='menu1' class='left-menu mobile-menu current-menu'></ul></div>" +
+            "</div>";
+
+        menuDiv.prepend(menu);
+
+        var backButton = "<span id='menuBackButton' style='display:none;' class='Akk mobile-back-button'><</span>"
+        menuDiv.append(backButton);
+        $("#menuBackButton").on('click', function () {
+            // close current menu and open parent
+            isAnimating = true;
+            var element = $("#menu" + (currentNode.panelLevel - 1) + " li").first();
+            slideUpMenuAll(currentNode.menuName, true, element);
+            $("#" + currentNode.menuName).addClass('current-menu');
+        });
+        setUpInnerMenu(menuObject, "#menu1");
+    }
+
+    function setUpInitialDesktopMenus() {
+        if (!menuObject) {
+            $("#menuDiv").hide();
+            return;
+        }
+
+        // create initial menu for slide out pages on a desktop sized screen
+        if (menuObject.numberPanels <= 4) {
+            var menuDiv = $("#menuDiv");
+            for (var i = 1; i < menuObject.numberPanels; i++) {
+
+                // alternate panel colour
+                var classes = 'slide-out-section menu-panel grey-background';
+                if (i % 2 == 0) {
+                    classes = 'slide-out-section menu-panel white-background';
+                }
+
+                // create slideout panels and add initial menus
+                var menu = "<div id='slideOut" + i + "' class='" + classes + "' value='" + i + "'>" +
+                    "<ul id='menu" + i + "' class='left-menu" + ((i != 1) ? " menu-start-left'" : "'") + ">" +
+                    "</ul></div>";
+                menuDiv.prepend(menu);
+            }
+
+            // final slide out panel must have menu holder for multiple slide down menus
+            var menu = "<div id='slideOut" + menuObject.numberPanels + "' class='slide-out-section  tx white-background' value='" + menuObject.numberPanels + "'>" +
+                "<div id='menuHolder' class='menu-holder'>" +
+                "<ul id='menu" + menuObject.numberPanels + "' class='left-menu inner-menu current-menu menu-start-left'></ul></div>"
+            "</div>";
+            menuDiv.prepend(menu);
+        }
+
+        setUpInnerMenu(menuObject, "#menu1");
+
+    }
+
+    function setUpEvents() {
+        // Setup menu click events on start
+        $("#menuToggle").change(toggleMenu);
+        $('ul.left-menu li').on('click', menuSelected);
+    }
+
+    function getMenuObject(jsonObject) {
+        // Parse json string to create menu
+
+        var items = jsonObject.items;
+        menuObject = createMenuNode(items[0], null, 0, 1);
+        /// TODO: BUG 5/15/2017
+        //if (isDesktop()) {
+        //    menuObject.numberPanels = 2;
+        //} else {
+        //    menuObject.numberPanels = 1;
+        //}
+
+        menuObject.numberPanels = 2;
+        currentNode = menuObject;
+    }
+
+	function setUpInnerMenu(element, menu) {
+        // create inner menu
+        var menuElement = $(menu);
+        for (var i = 0; i < element.numberElements; i++) {
+			var submenu = element.children[i];
+			if (element.title == "Industry Sectors" ||  element.title == "SECTORES INDUSTRIALES") {
+				// Industry sector home pages are instantly accessible
+				var liString = "<li class='Akk' value=" + i + "><a href='" + submenu.link + "' target='" + submenu.target + "'>" + submenu.title + "</a></li>";
+			}
+			else if (submenu.finalElement) {
+                var liString = "<li class='Akk' value=" + i + "><a href='" + submenu.link + "' target='" + submenu.target + "'>" + submenu.title + "</a></li>";
+            } else {
+                var liString = "<li class='Akk' value=" + i + "><a>" + submenu.title + "</a></li>";
+            }
+
+            menuElement.append(liString);
+        }
+
+    }
+
+	function menuSelected(event) {
+		if (event.ctrlKey) {
+			return;
+		}
+        // main menu is selected. clear second menu page and reset
+        if (isAnimating) {
+            return;
+        }
+
+        var element = $(this);
+        if (isDesktop()) {
+            desktopMenuSelected(element);
+        } else {
+            mobileMenuSelected(element);
+        }
+	}
+
+	function getMobileHeight(element) {
+		var height = element.outerHeight();
+		if (currentNode.parent != null) {
+			$("#menuBackButton").css("display", "block")
+			if (currentNode.parent.parent != null) {
+				height = hideParentMenu();
+			}
+		}
+		return height;
+	}
+
+	function hideParentMenu() {
+		
+		if (currentNode.parent.parent != null) {
+			var height = $("#" + currentNode.parent.parent.menuName + " li").first().outerHeight();
+			$("#" + currentNode.parent.parent.menuName).css("transform", "translateY(-" + (currentNode.panelLevel - 2) * height + "px)");
+		} else {
+			var height = $("#" + currentNode.parent.menuName + " li").first().outerHeight();
+		}       
+        $("#" + currentNode.parent.menuName).css("transform", "translateY(-" + (currentNode.panelLevel - 2) * height + "px)");
+        return height;
+	}
+
+	function mobileMenuSelected(element) {
+
+		if (isAnimating) {
+			return;
+		}
+		var parent = element.parent();
+		if (parent.attr('id') == currentNode.menuName) {
+			// clicked on current menu - expand a new menu or go to page
+			currentNode = currentNode.children[element.attr('value')];
+			if (!currentNode.finalElement) {
+				// open new menu
+				height = getMobileHeight(element);
+				isAnimating = true;
+				slideUpMenuMost(element, onSlideUpCompletedMobile, height);
+
+			} else {
+				// open page and reset menu
+				clearMenu();
+				if (currentNode.target == "_blank") {
+					window.open(currentNode.link)
+					currentNode = menuObject;
+				}
+				else {
+					window.location.href = currentNode.link;
+				}
+				return;
+			}
+		} else if (currentNode.link != "") {
+			if (currentNode.target == "_blank") {
+				window.open(currentNode.link);
+			} else {
+				window.location.href = currentNode.link;
+			}
+		}
+	}
+
+    function desktopMenuSelected(selectedElement) {
+
+        var parentDiv = selectedElement.parent().parent();
+        var panelLevel = parseInt(parentDiv.attr('value'));
+
+        if (panelLevel != currentNode.panelLevel) {
+            closeExtraMenus(panelLevel);
+        }
+
+        // set currentNode to correct value
+        getSelectedNode(selectedElement.attr('value'), panelLevel);
+
+        // set active li elements
+        setSelectedPanels(panelLevel, selectedElement);
+
+        if (currentNode.finalElement) {
+            // if selected element has no submenu, go to link
+            clearMenu();
+            if (currentNode.target == "_blank") {
+                window.open(currentNode.link)
+                currentNode = menuObject;
+            }
+            else {
+                window.location.href = currentNode.link;
+            }
+            return;
+        }
+
+        var nextLevel = panelLevel + 1;
+        $("#slideOut" + nextLevel).css('transform', 'translate(' + panelLevel * 100 + "%)");
+        var currentMenu = $("#menu" + nextLevel);
+
+        // align new menu with selected li from parent menu
+        var margin = getTopMarginForMenu();
+        currentMenu.css({
+            'margin-top': margin
+        });
+
+        // clear any previous content from current menu
+        currentMenu.empty();
+        currentMenu.nextAll().remove();
+        currentMenu.removeClass('immediate-parent-menu ancestor-menu');
+
+        // add current content to current menu
+        setUpInnerMenu(currentNode, "#menu" + nextLevel);
+
+        slideMenuFromLeft(currentMenu);
+
+        // set correct on click method depending on whether next menu is a panel or a dropdown
+        if (nextLevel >= menuObject.numberPanels) {
+            $('#menu' + nextLevel + ' li').on('click', function () {
+                innerMenuSelected($(this));
+            });
+
+
+            currentMenu.addClass("current-menu");
+        } else {
+            $('#menu' + nextLevel + ' li').on('click', menuSelected);
+        }
+    }
+
+    function slideMenuFromLeft(currentMenu) {
+        // slide menu in from left
+        currentMenu.addClass('menu-start-left');
+        var lis = currentMenu.find('li');
+        lis.each(function (i) {
+            var element = $(this);
+            setTimeout(function () { element.stop().animate({ left: "0%" }, 300); }, i * 900 / lis.size());
+        });
+    }
+
+    function getTopMarginForMenu() {
+        // aligning menu with selected li means taking into account all previous selected lis from earlier panels
+        var margin = 0;
+        for (var i = 0; i < selectedElements.length; i++) {
+            margin += selectedElements[i].attr('value') * 55;
+        }
+        return margin;
+    }
+
+    function setSelectedPanels(panelLevel, selectedElement) {
+        // Add and remove selected lis from the list, while updating class 'active'
+        if (selectedElements[panelLevel - 1] != null) {
+
+            selectedElements[panelLevel - 1].removeClass('active white-active');
+            selectedElements[panelLevel - 1] = selectedElement;
+        } else {
+            selectedElements.push(selectedElement);
+        }
+
+        panelLevel % 2 != 0 ? selectedElement.addClass("active") : selectedElement.addClass("white-active");    // alternating elements are white and grey
+        for (var i = panelLevel; i < selectedElements.length; i++) {
+            selectedElements[i].removeClass('active white-active');
+        }
+        selectedElements.length = panelLevel;
+    }
+
+    function getSelectedNode(childValue, panelValue) {
+        // move up the menu tree to find the correct node for the panel value
+        while (currentNode.panelLevel != panelValue) {
+            currentNode = currentNode.parent;
+        }
+        currentNode = currentNode.children[childValue];
+    }
+
+    function closeExtraMenus(level) {
+        // close additional menus
+        var maxPanel = parseInt(menuObject.numberPanels) + 1
+        for (var i = level + 2; i < maxPanel; i++) {
+            $("#slideOut" + i).css('transform', 'translate(' + level * 100 + '%, 0)');
+            $("#menu" + i).empty();
+        }
+    }
+
+    function createMenuNode(jsonElement, parent, value, level) {
+        // Create tree/node object to keep track of open menu
+        var node = { title: jsonElement.Heading, parent: parent, numberElements: jsonElement.ChildCount, value: value, menuName: "menu" + level };
+        node.panelLevel = level;
+        node.link = jsonElement.Link;
+        if (jsonElement.Target) {
+            node.target = jsonElement.Target;
+        } else {
+            node.target = "";
+        }
+        if (jsonElement.ChildCount > 0) {
+            node.finalElement = false;
+
+            node.children = []
+            for (var i = 0; i < node.numberElements; i++) {
+                node.children.push(createMenuNode(jsonElement.Children[i], node, i, level + 1));
+            }
+        } else {
+            node.finalElement = true;
+        }
+        return node;
+    }
+
+    function openMenu() {
+
+        $("#whiteLogo").addClass("white-logo-gone");
+        $("nav.webilizeHeader").addClass("slide-menu-open");
+
+        // open initial slide out panel
+        for (var i = 1; i < menuObject.numberPanels + 1; i++) {
+            $("#slideOut" + i).css("transform", "translate(0,0)");
+		}
+		if (pageIsInner) {
+			openMenuToCurrentLocation();
+		}
+	}
+
+	function openMenuToCurrentLocation() {
+		if (isDesktop()) {
+			openDesktopMenuToCurrentLocation();
+		} else {
+			openMobileMenuToCurrentLocation();
+		}
+	}
+
+	function openDesktopMenuToCurrentLocation() {
+		var firstMenuItemIndex = getMenuItemIndex(breadcrumb[0].Name, menuObject);
+		if (breadcrumb.length > 1 && firstMenuItemIndex != -1) {
+
+			// Highlight first li
+			$("#slideOut2").css("transform", "translateX(100%)");
+			var firstElement = $("#menu1 li").eq(firstMenuItemIndex);
+			firstElement.addClass("active");
+			selectedElements.push(firstElement);
+
+			// Slide out first part of menu
+
+			// add current content to current menu
+			currentNode = menuObject.children[firstMenuItemIndex];
+			currentMenu = $("#menu2");
+
+			// clear any previous content from current menu
+			currentMenu.empty();
+			currentMenu.nextAll().remove();
+			currentMenu.removeClass('immediate-parent-menu ancestor-menu');
+
+			// align new menu with selected li from parent menu
+			var margin = getTopMarginForMenu();
+			currentMenu.css({
+				'margin-top': margin
+			});
+
+			var nextMenuItemIndex = getMenuItemIndex(breadcrumb[1].Name, currentNode);
+			if (nextMenuItemIndex != -1 && breadcrumb.length > 2) {
+				// Add just one li since there will be sub menus
+				addLisToUl(nextMenuItemIndex, false);
+				var nextElement = $("#menu2 li");
+				nextElement.css("left", "0%");
+				nextElement.addClass("active");
+				currentNode = currentNode.children[nextMenuItemIndex];
+				selectedElements.push(nextElement);
+			} else {
+				// Add all lis as this is the final level
+				setUpInnerMenu(currentNode, "#menu2");
+				slideMenuFromLeft(currentMenu);
+				$("#menu2 li").eq(nextMenuItemIndex).addClass("previously-selected");
+			}
+			// Add on click method 
+			$('#menu2 li').on('click', function () {
+				innerMenuSelected($(this));
+			});
+
+			for (var i = 2; i < breadcrumb.length; i++) {
+
+				// Add inner menu sections
+				var level = i + 1;
+				var currentMenu = $("#menu" + level);
+
+				// Add back arrows
+				$("#menuHolder").append("<span id='backArrow" + currentNode.panelLevel + "' value='" + currentNode.panelLevel + "' style= 'margin-top:-41px;' class='menu-back-arrow Akk' ><</span>")
+				$("#backArrow" + currentNode.panelLevel).on("click", desktopMenuReturn);
+
+				// Add new menu
+				var newMenu = "<ul id='" + currentNode.menuName + "' class='inner-menu'></ul>";
+				$(".menu-back-arrow").removeClass("current");
+				if (i > 2) {
+					$("#backArrow" + currentNode.panelLevel).addClass("active current");
+				}
+				$("#menuHolder").append(newMenu);
+
+				nextMenuItemIndex = getMenuItemIndex(breadcrumb[i].Name, currentNode);
+
+				// Either add one li or all lis depending on if this is the last iteration.
+				if (i < breadcrumb.length - 1) {
+					addLisToUl(nextMenuItemIndex, false);
+					// Add on click method 
+					$('#menu' + currentNode.panelLevel + ' li').on('click', function () {
+						innerMenuSelected($(this));
+					});
+				} else {
+					slideDownMenu();
+					$("#menu" + currentNode.panelLevel + " li").eq(nextMenuItemIndex).addClass("previously-selected");
+				}
+
+				// Don't increase current node on final iteration
+				if (i < breadcrumb.length - 1) {
+					currentNode = currentNode.children[nextMenuItemIndex];
+				}
+			}
+
+		} else if (firstMenuItemIndex != -1) {
+			$("#menu1 li").eq(firstMenuItemIndex).addClass("previously-selected");
+		}
+	}
+
+	function openMobileMenuToCurrentLocation() {
+		var firstMenuItemIndex = getMenuItemIndex(breadcrumb[0].Name, menuObject);
+		if (breadcrumb.length > 1 && firstMenuItemIndex != -1) {
+
+			// Remove all extra elements from first menu and slide up
+			var firstElement = $("#menu1 li").eq(firstMenuItemIndex);
+			firstElement.addClass("active");
+			selectedElements.push(firstElement);
+			$("#menu1 li").not(firstElement).remove();
+			var height = firstElement.outerHeight();
+			$("#menu1").css("transform", "translateY(-" + height + "px)");
+			$("#menuBackButton").css("display", "block")
+
+			// Slide out first part of menu
+
+			// add current content to current menu
+			currentNode = menuObject.children[firstMenuItemIndex];
+			currentMenu = $("#menu2");
+
+			// clear any previous content from current menu
+			currentMenu.empty();
+			currentMenu.nextAll().remove();
+			currentMenu.removeClass('immediate-parent-menu ancestor-menu');
+
+			var nextElement = firstElement;
+			for (var i = 1; i < breadcrumb.length; i++) {
+
+				height = nextElement.outerHeight();
+
+				var newMenu = "<ul id='" + currentNode.menuName + "' style='transform:translateY(-" + (currentNode.panelLevel - 2) * height + "px);' class='mobile-menu'></ul>";
+				$("#menuHolder").append(newMenu);
+				var nextMenuItemIndex = getMenuItemIndex(breadcrumb[i].Name, currentNode);
+
+				if (i < breadcrumb.length - 1) {
+					addLisToUl(nextMenuItemIndex, false);
+					if (currentNode.panelLevel < 3) {
+						$("#" + currentNode.menuName + " li").addClass("Akk");
+					}
+
+					$("#" + currentNode.menuName + " li").on('click', function () {
+						mobileMenuSelected($(this));
+					});
+					setMobileMenuClasses();
+					nextElement = $("#" + currentNode.menuName + " li");
+				} else {
+					slideDownMenu();
+					hideParentMenu();
+					$("#menu" + currentNode.panelLevel + " li").eq(nextMenuItemIndex).addClass("previously-selected");
+				}
+				if (i < breadcrumb.length - 1) {
+					currentNode = currentNode.children[nextMenuItemIndex];
+				}
+			}
+
+		} else {
+			$("#menu1 li").eq(firstMenuItemIndex).addClass("previously-selected");
+		}
+
+	}
+
+	function getMenuItemIndex(name, node) {
+		for (var i = 0; i < node.numberElements; i++) {
+			if (name == node.children[i].title) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+    function closeMenu() {
+        // close all slide out panels
+        if (menuObject) {
+            for (var i = 1; i < menuObject.numberPanels + 1; i++) {
+                $("#slideOut" + i).removeClass("slide-out-open");
+                $("#slideOut" + i).css("transform", "translate(-105%, 0)");
+                if (i != 1) {
+                    $("#menu" + i).addClass("menu-start-left");
+                }
+            }
+            currentNode = menuObject;
+        }
+        if (!isDesktop()) {
+            // clear and reset mobile menu
+            var menu1 = $("#menu1");
+            menu1.removeClass("mobile-parent-menu");
+            menu1.nextAll().remove();
+            menu1.empty();
+            setUpInnerMenu(menuObject, "#menu1");
+            $('ul.left-menu li').on('click', menuSelected);
+        }
+        $("#whiteLogo").removeClass("white-logo-gone");
+        $("nav.webilizeHeader").removeClass("slide-menu-open");
+		clearMenu();
+		selectedElements = [];
+    }
+
+    function toggleMenu() {
+        // Open and close main menu
+        if ($(this).find("input[type='checkbox']").is(':checked')) {
+            openMenu();
+
+        } else {
+            closeMenu();
+        }
+    }
+
+    function innerMenuSelected(selectedLi) {
+        if (isAnimating) {
+            return;
+        }
+		var parent = selectedLi.parent();
+        if (parent.attr('id') == currentNode.menuName) {
+            // clicked on current menu - expand a new menu or go to page
+			var value = selectedLi.attr("value");
+			currentNode = currentNode.children[value];
+            if (!currentNode.finalElement && selectedLi.find('a').attr('href') == null) {
+                // open new menu
+                //var top = selectedLi.index() * 55 + (currentNode.panelLevel - menuObject.numberPanels - 1) * 55;
+                if (currentNode.panelLevel >= menuObject.numberPanels + 2) {
+                    $("#menuHolder").append("<span id='backArrow" + currentNode.panelLevel + "' value='" + currentNode.panelLevel + "' style= 'margin-top:-41px;' class='menu-back-arrow Akk' ><</span>")
+                    $("#backArrow" + currentNode.panelLevel).on("click", desktopMenuReturn)
+                }
+                addNewMenu(selectedLi);
+
+            }
+			else {
+                // open page and reset menu
+                clearMenu();
+                if (currentNode.target == "_blank") {
+                    window.open(currentNode.link)
+                    currentNode = menuObject;
+                }
+                else {
+                    window.location.href = currentNode.link;
+                }
+            }
+        } else {
+            // clicked on a previous menu - open link
+
+			while (parent.attr('id') != currentNode.parent.menuName) {
+				currentNode = currentNode.parent;
+			}
+            if (currentNode.target == "_blank") {
+                window.open(currentNode.link);
+			} else {
+                window.location.href = currentNode.link;
+            }
+
+        }
+
+    }
+
+    function desktopMenuReturn() {
+
+        var targetMenuNumber = $(this).attr("value") - 1;
+        var menuLength = currentNode.panelLevel;
+        var targetMenuName = "menu" + targetMenuNumber;
+        var selectedLi = $("#" + targetMenuName).children().first();
+        currentNode = getNodeParent(targetMenuName, selectedLi);
+        for (var i = targetMenuNumber + 1; i < parseInt(menuLength) + 1; i++) {
+            $("#backArrow" + i).fadeOut(300, function () { $(this).remove(); });
+        }
+        $("#backArrow" + targetMenuNumber).addClass("current");
+        $("#" + currentNode.menuName).addClass('current-menu');
+    }
+
+    function setMenuClasses() {
+        if (isDesktop()) {
+            setDesktopMenuClasses();
+        } else {
+            setMobileMenuClasses();
+        }
+    }
+
+    function setDesktopMenuClasses() {
+        // Set open menu classes to display correct position of underline and coloured text
+        $("#" + currentNode.menuName).removeClass("ancestor-menu grand-parent-menu immediate-parent-menu").addClass('current-menu');
+        if (currentNode.panelLevel >= menuObject.numberPanels) {
+            var parent = currentNode.parent;
+            var count = 0;
+            while (parent != null && parent.panelLevel >= menuObject.numberPanels) {
+                if (count == 0) {
+                    $("#" + parent.menuName).removeClass("ancestor-menu grand-parent-menu current-menu").addClass('immediate-parent-menu');
+                }
+                else if (parent.panelLevel == menuObject.numberPanels) {
+                    $("#" + parent.menuName).removeClass("immediate-parent-menu current-menu grand-parent-menu").addClass('ancestor-menu');
+                } else {
+                    $("#" + parent.menuName).removeClass("ancestor-menu immediate-parent-menu current-menu").addClass('grand-parent-menu');
+                }
+                count += 1;
+                parent = parent.parent;
+            }
+        }
+    }
+
+    function setMobileMenuClasses() {
+        $("#" + currentNode.menuName).removeClass('mobile-menu-back mobile-parent-menu').addClass('current-menu');
+        if (currentNode.parent != null) {
+            $("#" + currentNode.parent.menuName).removeClass('current-menu').addClass('mobile-parent-menu');
+        }
+        if (currentNode.panelLevel > 2) {
+            $("#" + currentNode.parent.menuName).addClass('mobile-menu-back');
+        }
+    }
+
+    function addNewMenu(selectedLi) {
+        // open a new submenu
+        isAnimating = true;
+        slideUpMenuMost(selectedLi, onSlideUpCompletedDesktop, selectedLi.outerHeight());
+	}
+
+	function addLisToUl(index, animated) {
+		var submenu = currentNode.children[index];
+
+		if (submenu.finalElement) {
+
+			var liString = "<li value=" + index + "><a href='" + submenu.link + "' target='" + submenu.target + "'>" + submenu.title + "</a></li>";
+		} else {
+			var liString = "<li value=" + index + "><a>" + submenu.title + "</a></li>";
+		}
+		if (animated) {
+			$(liString).hide().prependTo("#" + currentNode.menuName).slideDown("slow");
+		} else {
+			$(liString).prependTo("#" + currentNode.menuName);
+		}		
+	}
+
+    function slideDownMenu() {
+        // slide a new menu down from header
+        var count = currentNode.numberElements - 1;
+        while (count > -1) {
+			addLisToUl(count, true);
+            count -= 1;
+        }
+
+        // set on click method
+        if (isDesktop()) {
+            $("#" + currentNode.menuName + " li").on('click', function () {
+                innerMenuSelected($(this));
+            });
+            setMenuClasses();
+        } else {
+            if (currentNode.panelLevel < 3) {
+                $("#" + currentNode.menuName + " li").addClass("Akk");
+            }
+
+            $("#" + currentNode.menuName + " li").on('click', function () {
+                mobileMenuSelected($(this));
+            });
+            setMobileMenuClasses();
+        }
+
+        isAnimating = false;
+    }
+
+    function slideUpMenuAll(menuName, final, selectedLi) {
+        // Close an open submenu by sliding up into header
+        var siblings = $("#" + menuName + " li");
+
+        var height = siblings.first().outerHeight();
+        siblings.each(function (i) {
+            var totalHeight = (i + 1) * height;
+            var sibling = $(this);
+            sibling.animate({
+                now: '+=100'
+            }, {
+                step: function (now, fx) {
+                    var move = now * totalHeight / 100;
+                    sibling.css('transform', "translateY(-" + move + "px)");
+                }, duration: 350, complete: function () {
+                    if (i == siblings.size() - 1) {
+                        // if this is the last element to complete animation, then all elements are hidden. Remove all siblings that are not selected
+                        $("#" + menuName).remove();
+                        if (final) {
+                            // trigger slide down of new menu when longest menu has finished animating
+                            if (isDesktop()) {
+                                recreateMenu(selectedLi);
+                            } else {
+                                recreateMobileMenu(selectedLi);
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    }
+
+    function slideUpMenuMost(selectedLi, onSlideUpCompleted, height) {
+        // a new submenu is opening - we need to close the current menu except for the selected heading
+        selectedLi.css({
+            'z-index': '100'   // bring selected heading to the front
+        });
+
+        var siblings = $("#" + currentNode.parent.menuName + " li");
+        siblings.each(function (i) {
+            var totalHeight = (i) * height;     // hide all siblings behind selected heading
+            $(this).animate({
+                now: '+=100'
+            }, {
+                step: function (now, fx) {
+                    var move = now * totalHeight / 100;
+                    $(this).css('transform', "translateY(-" + move + "px)");
+                }, duration: 250, complete: function () {
+                    if (i == siblings.size() - 1) {
+                        onSlideUpCompleted(siblings, selectedLi, height);
+                    }
+                }
+            });
+        });
+    }
+
+    function onSlideUpCompletedMobile(siblings, selectedLi, height) {
+        // if this is the final element to finish animating then remove all unnecessary siblings,
+        //  set menu classes and trigger slide down of new menu.
+        siblings.not(selectedLi).remove();
+        selectedLi.css('transform', 'translateY(0)');  // since this is now the only element, we don't want it translated anymore
+        selectedLi.css({
+            'z-index': 'auto'   // we don't want this heading to be covering anything if the menu is selected a second time
+        });
+        setMobileMenuClasses();
+        var newMenu = "<ul id='" + currentNode.menuName + "' style='transform:translateY(-" + (currentNode.panelLevel - 2) * height + "px);' class='mobile-menu'></ul>";
+        $("#menuHolder").append(newMenu);
+        slideDownMenu();
+    }
+
+    function onSlideUpCompletedDesktop(siblings, selectedLi) {
+
+        // if this is the final element to finish animating then remove all unnecessary siblings,
+        //  set menu classes and trigger slide down of new menu.
+        siblings.not(selectedLi).remove();
+        selectedLi.css('transform', 'translateY(0)');  // since this is now the only element, we don't want it translated anymore
+        selectedLi.css({
+            'z-index': 'auto'   // we don't want this heading to be covering anything if the menu is selected a second time
+        });
+        setMenuClasses();
+        var newMenu = "<ul id='" + currentNode.menuName + "' class='inner-menu'></ul>";
+        $(".menu-back-arrow").removeClass("current");
+        $("#backArrow" + currentNode.panelLevel).addClass("active current");
+        $("#menuHolder").append(newMenu);
+        slideDownMenu();
+    }
+
+    function recreateMobileMenu(selectedLi) {
+
+        var height = selectedLi.outerHeight();
+        currentNode = currentNode.parent;
+        if (currentNode.parent != null) {
+            height = $("#" + currentNode.parent.menuName + " li").first().outerHeight();
+            $("#" + currentNode.parent.menuName).css("transform", "translateY(-" + (currentNode.panelLevel - 2) * height + "px)");
+        } else {
+            $("#menuBackButton").css("display", "none")
+        }
+
+
+        $("#" + currentNode.menuName).css("transform", "translateY(-" + (currentNode.panelLevel - 2) * height + "px)");
+
+
+        var count = currentNode.numberElements - 1;
+        var index = selectedLi.attr('value');
+        while (count > -1) {
+            var submenu = currentNode.children[count];
+            if (submenu.value == index) {
+                // don't make a double of the only existing element
+                count -= 1;
+                continue;
+            }
+            recreateLi(count, submenu, index, selectedLi);
+            count -= 1;
+        }
+        $('#' + currentNode.menuName + ' li').unbind('click');
+        $('#' + currentNode.menuName + ' li').on('click', function () {
+            mobileMenuSelected($(this));
+        });
+        setMobileMenuClasses();
+        isAnimating = false;
+    }
+
+    function recreateLi(count, submenu, index, selectedLi) {
+        var hrefString = ""
+        var classString = "";
+        if (submenu.finalElement) {
+            // no submenu so add link
+            hrefString = "href='" + submenu.link + "' target='" + submenu.target + "'";
+        }
+        if (submenu.panelLevel <= 3) {
+            // bold text for first two menus
+            classString = "class='Akk'";
+        }
+        var liString = "<li " + classString + " value=" + count + "><a " + hrefString + ">" + submenu.title + "</a></li>";
+        if (submenu.value > index) {
+            // if element comes after existing sibling, slide down below
+            $(liString).hide().insertAfter(selectedLi).slideDown("slow");;
+        } else {
+            // if element comes before existing sibling, slide down above
+            $(liString).hide().prependTo("#" + currentNode.menuName).slideDown("slow");
+
+        }
+    }
+
+    function recreateMenu(selectedLi) {
+        // recreate parent menu after closing submenu
+        var menuElement = $("#" + currentNode.menuName);
+        menuElement.removeClass("immediate-parent-menu");
+        menuElement.removeClass("menu-start-left");
+        var count = currentNode.numberElements - 1;
+        var index = selectedLi.attr('value');
+        while (count > -1) {
+            var submenu = currentNode.children[count];
+            if (submenu.value == index) {
+                // don't make a double of the only existing element
+                count -= 1;
+                continue;
+            }
+            recreateLi(count, submenu, index, selectedLi);
+            count -= 1;
+        }
+        $('#' + currentNode.menuName + ' li').unbind('click');
+        $('#' + currentNode.menuName + ' li').on('click', function () {
+            innerMenuSelected($(this));
+        });
+        setMenuClasses();
+        isAnimating = false;
+    }
+
+    function getNodeParent(menuName, selectedLi) {
+        // cycle back through tree to find parent menu to reopen. Slide up all submenus.
+        isAnimating = true;
+        slideUpMenuAll(currentNode.menuName, true, selectedLi);
+        var parent = currentNode.parent;
+        $("#" + parent.menuName).removeClass("immediate-parent-menu");
+        while (parent != null) {
+            if (parent.menuName == menuName) {
+
+                return parent;
+            }
+            slideUpMenuAll(parent.menuName, false);
+            parent = parent.parent;
+
+        }
+        return null;
+    }
+
+    function clearMenu() {
+        // clear all selected lis from main menu
+        for (var i = 0; i < selectedElements.length; i++) {
+            selectedElements[i].removeClass('active white-active');
+        }
+        //$("#menu2").removeClass("immediate-parent-menu ancestor-menu")
+    }
+
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        var pageLocales = ["en","es"];
+        var currentPath = getCurrentPath(true);
+        var ddlItems = [];
+        var currentLocale = getLocaleFromPath();
+
+        if (currentLocale && (currentLocale.toLowerCase() === "fr" || currentLocale.toLowerCase() === "pt")) {
+            $("#headerSearch").hide();
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        // items { name, locale, path }
+        function setLanguageDdl(items) {
+            $("#languagesDdl").html("");
+
+            if (items.length > 0) {
+                items.forEach(function(item) {
+                    $("#languagesDdl")
+                        .append("<li><a data-locale='" +
+                            item.locale +
+                            "' href='/" +
+                            item.locale +
+                            item.path +
+                            "'>" +
+                            item.name +
+                            "</a></li>");
+                });
+            } else {
+                $("#languagesDdl").remove();
+            }
+
+
+            $("#languagesDdl a").click(function() {
+                setCookie("lang", $(this).attr("data-locale"), 365);
+            });
+
+            if(!getCookie("lang"))
+                setCookie("lang", getLocaleFromPath(), 365);
+
+            var lang = getCookie("lang") || "en";
+            $("#localeButton")
+                .html(
+                    "  <i class=\"fa fa-map-marker\" aria-hidden=\"true\"></i>" +
+                    lang.toUpperCase() +
+                    "\n<i class=\"fa fa-chevron-down\" aria-hidden=\"true\"></i>");
+
+            $("#languagesDdl").find("[data-locale]").each(function() {
+                if ($(this).attr("data-locale") === lang)
+                    $(this).remove();
+            });
+        }
+        
+                    
+        if (pageLocales) {
+            pageLocales.forEach(function(s) {
+                    ddlItems.push({
+                        name: s.toUpperCase(),
+                        locale: s,
+                        path: currentPath
+                    });
+            });
+            
+            setLanguageDdl(ddlItems);
+        } else {
+            $.get("/api/GetLinkedPages?id=" + getCurrentPath(false),
+                function(data) {
+                    if (!data || !data.items)
+                        return;
+                    data.items.forEach(function(item) {
+                        ddlItems.push({
+                            name: item.Name.toUpperCase(),
+                            locale: item.Locale,
+                            path: "/" + item.Path
+                        });
+                    });
+
+                    setLanguageDdl(ddlItems);
+                });
+        }
+
+        function getCurrentPath(excludeLocale) {
+            var path = window.location.pathname;
+            if (!path)
+                return "";
+
+            // Example: /en/careers/jobcategories/
+            // becomes ["", "en", "careers", "jobcategories"]
+            var pathItems = path.split('/');
+            if (!pathItems || pathItems.length === 0)
+                return "";
+
+            var subItems = [];
+            if (excludeLocale && pathItems.length >= 3) {
+                subItems = pathItems.slice(2, pathItems.length);
+            } else if (!excludeLocale && pathItems.length >= 2) {
+                subItems = pathItems.slice(1, pathItems.length);
+            }
+
+            if (subItems && subItems.length > 0) {
+                var parsedPath = "/";
+                subItems.forEach(function(subItem) {
+                    parsedPath += subItem + "/";
+                });
+
+                return parsedPath;
+            }
+
+            return "";
+        }
+    });
+
+    function getLocaleFromPath() {
+        var path = window.location.pathname;
+        if (!path)
+            return "en";
+            
+        var pathItems = path.split('/');
+        if (!pathItems || pathItems.length <= 1)
+            return "en";
+
+        var validLocales = ["en", "fr", "es", "pt"];
+        var validatedLocale = "en";
+        validLocales.forEach(function(l) {
+            if (l === pathItems[1])
+                validatedLocale = pathItems[1];
+        });
+        return validatedLocale;
+    }
+</script>
+
+
+
+
+    <div class="webilize-custom-content-styled">
+        
+
+
+<!--TOP SLIDER-->
+<!--TOP SLIDER-->
+
+<section class="slider">
+    
+
+
+
+
+    <div class="flexslider">
+        <ul class="slides home-bxslider">
+<li class="orange" data-num="1">
+    <div class="slide-bg" style="background-image: url(/Content/images/ausenco/slider/slide1.png)"></div>
+    <div class="content animated hide">
+        <div class="content-items">
+            <h1 class="Avant t1 animated hide">Redefining what's possible</h1>
+            <div class="Akk t2 animated hide">Delivering innovation in ever changing markets.</div>
+            <a href="/en/featured-projects" class="link Akk animated hide">ASK AUSENCO HOW TO ADD VALUE TO YOUR BUSINESS <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            <div class="the-expert animated hide">
+                <h6 class="name Akk">Offshore Facility</h6>
+                <p class="place Akk">Canada</p>
+                <div class="border"></div>
+            </div>
+        </div>
+    </div>
+
+</li>
+
+<li class="green" data-num="2">
+    <div class="slide-bg" style="background-image: url(/Content/images/ausenco/slider/moose-river.jpg)"></div>
+    <div class="content animated">
+        <div class="content-items">
+            <h1 class="Avant t1 animated ">We deliver beyond expectations</h1>
+            <div class="Akk t2 animated ">
+                With a history of partnering with clients to create breakthrough results, we've got strong foundations to draw on.
+            </div>
+            <a href="/en/moose-river-gold-project" class="link Akk animated ">Optimised design reduces cost <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            <div class="the-expert">
+                <h6 class="name Akk">Moose River Consolidated Gold Project</h6>
+                <p class="place Akk">Canada</p>
+                <div class="border"></div>
+            </div>
+
+        </div>
+    </div>
+</li>
+
+<li class="purple dark-opacity-li" data-num="3">
+    <div class="slide-bg" style="background-image: url(/Content/images/ausenco/slider/slide6.png)"></div>
+    <div class="content animated">
+        <div class="content-items">
+            <h1 class="Avant t1 animated ">Redefining what’s possible</h1>
+            <div class="Akk t2 animated ">Hear from our people how we deliver beyond expectations</div>
+            <a href="https://www.ausenco.com/en/ask-ausenco-how-video" class="link Akk animated ">Watch our “Ask Ausenco How” video <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</li>
+
+<li class="purple" data-num="4">
+
+    <div class="slide-bg" style="background-image: url(/Content/images/ausenco/slider/slide3.png)"></div>
+    <div class="content animated">
+        <div class="content-items">
+            <h1 class="Avant t1 animated ">We challenge what's possible</h1>
+            <div class="Akk t2 animated ">Delivering innovation in ever changing markets.</div>
+            <a href="/en/featured-projects" class="link Akk animated ">DISCOVER HOW WE HAVE SOLVED COMPLEX CHALLENGES  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            <div class="the-expert">
+                <h6 class="name Akk">False Creek Energy Center</h6>
+                <p class="place Akk">Canada</p>
+                <div class="border"></div>
+            </div>
+
+        </div>
+    </div>
+</li>
+
+<li class="green" data-num="5">
+    <div class="slide-bg" style="background-image: url(/Content/images/ausenco/slider/slide4.png)"></div>
+    <div class="content animated">
+        <div class="content-items">
+            <h1 class="Avant t1 animated ">Our people are redefining what's possible</h1>
+            <div class="Akk t2 animated ">
+                Where do innovative mining technologies lie in terms of maturity and adoption?
+            </div>
+            <a href="/en/ausenco-sponsors-disrupt-mining" class="link Akk animated ">Read Ken Murray’s article & learn about the “Mining Hype Cycle” <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+
+
+        </div>
+    </div>
+
+</li>
+
+<li class="purple english-only-slider" data-num="6">
+    <div class="slide-bg" style="background-image: url(/Content/images/ausenco/slider/slider5.png)"></div>
+    <div class="content animated">
+        <div class="content-items">
+            <h1 class="Avant t1 animated ">We’re proud to introduce Hemmera</h1>
+            <div class="Akk t2 animated ">
+                One of Canada's leading environmental consultancies is now an Ausenco company.
+            </div>
+
+
+            <a href="https://www.hemmera.com" target="_blank" class="link Akk animated ">Learn more about Hemmera’s innovative environmental services<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            <div class="the-expert">
+                <h6 class="name Akk">Habitat Enhancement Program, Canada </h6>
+                <div class="border"></div>
+            </div>
+
+        </div>
+    </div>
+
+</li>
+
+        </ul>
+    </div>
+
+    <div class="slider-bottom-wrap">
+        <div class="scroll-down">
+            <a id="scrollForMore" href="#homeInsights">
+                <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+            </a>
+
+        </div>
+        <div class="slider-bottom">
+            <div class="row">
+                <div class="row-height">
+                    <div class="col-sm-12 col-lg-3 col-lg-height">
+                        <p class="item title Akk">Select your industry to learn how:</p>
+                    </div>
+                    <div class="col-sm-4 col-lg-3 col-lg-height">
+                        <a id="item-link-1" class="item-box-btn-slider item link Avant" data-toggle="popover" data-placement="top" data-content="Learn about our consulting, project delivery, operations and asset optimisation solutions for the minerals & metals sector." href="/en/minerals-metals">
+                            <div class="item-box">
+                                <span id="btn_animate1" class="btn-animate"></span>
+                                <span class="relative-span">Minerals & Metals </span>
+                                <div class="arrow">
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-3 col-lg-height">
+                        <a id="item-link-2" class="item-box-btn-slider item link Avant" data-toggle="popover" data-placement="top" data-content="Learn about our consulting, project delivery, operations and asset optimisation solutions for the oil & gas sector." href="/en/oil-and-gas">
+                            <div class="item-box">
+                                <span id="btn_animate2" class="btn-animate"></span>
+                                <span class="relative-span">Oil & Gas</span>
+                                <div class="arrow">
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-3 col-lg-height">
+                        <a id="item-link-3" class="item-box-btn-slider item link Avant" data-toggle="popover" data-placement="top" data-content="Learn about our consulting, project delivery, operations and asset optimisation solutions for the industrial sector." href="/en/industrial">
+                            <div class="item-box">
+                                <span id="btn_animate3" class="btn-animate"></span>
+                                <span class="relative-span">Industrial</span>
+                                <div class="arrow">
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+<!-- <div class="page-wraper home-page"> -->
+
+
+
+    <!-- <section class="home-insights" id="homeInsights">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="row-height">
+
+                    <div class="col-lg-6 col-lg-height col-xs-12 home-insights-left">
+                        <div class="row no-gutter">
+                            <div class="insights-banner-title">
+                                <div class="col-md-12 widgetItem">
+                                    <h3>Latest news and insights</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widgetContainer insights-block">
+                            <div class="row">
+
+                                    <div id="news_article_one" class="slide-fade-in-start await-slide col-sm-12 col-md-12 col-lg-4 widgetItem">
+                                        <h5><a href="/en/meet-roberto-easdale">Meet Roberto Easdale</a></h5>
+                                        <div class="author Akk">
+                                            <span>By Ausenco</span>
+                                        </div>
+                                        <div class="author-title">Manager, Process Infrastructure </div>
+                                        <p>
+                                            In this Insight we share a personal profile of Roberto Easdale, Manager, Process Infrastructure
+                                        </p>
+                                        <a class="read-btn Akk" href="/en/meet-roberto-easdale">Read Article <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div id="news_article_one" class="slide-fade-in-start await-slide col-sm-12 col-md-12 col-lg-4 widgetItem">
+                                        <h5><a href="/en/ask-ausenco-how-video">&#39;Ask Ausenco How&#39; video</a></h5>
+                                        <div class="author Akk">
+                                            <span>By Ausenco</span>
+                                        </div>
+                                        <div class="author-title"></div>
+                                        <p>
+                                            Hear from our people how we deliver beyond expectations
+                                        </p>
+                                        <a class="read-btn Akk" href="/en/ask-ausenco-how-video">Read Article <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div id="news_article_one" class="slide-fade-in-start await-slide col-sm-12 col-md-12 col-lg-4 widgetItem">
+                                        <h5><a href="/en/meet-jean-philippe-jp-fortin">Meet Jean-Philippe (JP) Fortin</a></h5>
+                                        <div class="author Akk">
+                                            <span>By Ausenco</span>
+                                        </div>
+                                        <div class="author-title">Vice President, Pipelines</div>
+                                        <p>
+                                            In this Insight we share a personal profile of Jean-Philippe (JP) Fortin, Vice-President, Pipelines. 
+                                        </p>
+                                        <a class="read-btn Akk" href="/en/meet-jean-philippe-jp-fortin">Read Article <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
+
+                            </div>
+                        </div>
+                        <div class="widgetContainer insights-block">
+                            <div class="row">
+                                    <div id="news_article_four" class="slide-fade-in-start await-slide col-sm-12 col-md-12 col-lg-4 widgetItem">
+                                        <h5><a href="/en/Remembering_Bill_Webb">Remembering Bill Webb</a></h5>
+                                        <div class="author Akk">
+                                            <span>NEWS</span>
+                                        </div>
+                                        <div class="author-title"></div>
+                                        <p>
+                                            Ausenco CEO Zimi Meka pays tribute to Bill Webb, industry stalwart and long-time Ausenco employee for his significant contributions to Ausenco and the resources industry.
+                                        </p>
+                                        <a class="read-btn Akk" href="/en/Remembering_Bill_Webb"> Read Article  <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div id="news_article_four" class="slide-fade-in-start await-slide col-sm-12 col-md-12 col-lg-4 widgetItem">
+                                        <h5><a href="/en/ausenco-supports-the-boys-and-girls-club-of-south-coast-bc-canada">Ausenco supports the Boys and Girls Club of South Coast BC, Canada</a></h5>
+                                        <div class="author Akk">
+                                            <span>NEWS</span>
+                                        </div>
+                                        <div class="author-title"></div>
+                                        <p>
+                                            We are pleased to support the B&amp;GC who provide a wide range of activities for children and youth
+                                        </p>
+                                        <a class="read-btn Akk" href="/en/ausenco-supports-the-boys-and-girls-club-of-south-coast-bc-canada"> Read Article  <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div id="news_article_four" class="slide-fade-in-start await-slide col-sm-12 col-md-12 col-lg-4 widgetItem">
+                                        <h5><a href="/en/Ausenco wins Runner Up at the 2018 Duty of Care Awards ">Ausenco wins Runner Up at the 2018 Duty of Care Awards </a></h5>
+                                        <div class="author Akk">
+                                            <span>NEWS</span>
+                                        </div>
+                                        <div class="author-title"></div>
+                                        <p>
+                                            We are honoured to be awarded Runner Up in the Communication Category of the International SOS Foundation 2018 Duty of Care Awards. 
+                                        </p>
+                                        <a class="read-btn Akk" href="/en/Ausenco wins Runner Up at the 2018 Duty of Care Awards "> Read Article  <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
+
+                            </div>
+
+                            <div class="row">
+
+
+                                <div id="insights_parent" class="col-sm-6 col-md-12 col-lg-6 widgetItem btn-slide-parent">
+                                    <a id="insights_text" class="global-btn-white rev-btn Avant" href="/en/news-resources">
+                                        View News & Resources <span class="pull-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                        <span id="insights_overlay" class="slide-overlay"></span>
+                                    </a>
+                                </div>
+                                <div id="experts_parent" class="col-sm-6 col-md-12 col-lg-6  widgetItem btn-slide-parent">
+                                    <a id="experts_text" class="global-btn-white rev-btn Avant" href="/en/our-experts">
+                                        View Experts<span class="pull-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                        <span id="experts_overlay" class="slide-overlay"></span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-lg-height col-xs-12 home-insights-right">
+                        <div class="widgetContainer">
+                            <div class="col-sm-5 widgetItem">
+                                
+                                
+                                <h2>Expert <span>insights</span></h2>
+                                
+                                <p class="lead">Regular insights, news, knowledge <br/>articles and thought provoking opinion pieces by our experts.</p>
+
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-experts">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="row-height">
+                    <div class="col-lg-6 col-xs-12 col-lg-height home-experts-right">
+                        <div class="widgetContainer">
+                            <div class="widgetItem">
+                                
+                                <h2 class="font-26-73-1600">Meet our <span>Experts</span></h2>
+                            </div>
+                            
+                        </div>
+                        <a class="global-btn-white rev-btn Avant inverted" href="/en/carol-turner">
+                            View  Profile <span class="pull-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                            <span id="experts_overlay" class="slide-overlay" style="left: -120%;"></span>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 col-lg-height home-experts-left">
+                        <div class="row no-gutter">
+                            <div class="experts-banner-title">
+                                <div class="col-md-12 widgetItem">
+                                    <h3 style="color:#fff">Featured Experts</h3>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="home-experts-items">
+                            <div class="row">
+                                    <div class="col-sm-6">
+                                        <div id="expert_one" class="slide-fade-in-start await-slide home-expert-item box">
+                                            <a style="z-index: 100;" href="/en/eddie-mclean">
+                                                <div class="overbox" onclick="location.href='/en/eddie-mclean'">
+                                                    <h4 class="name overtext">Eddie McLean</h4>
+                                                    <div class="occupation Akk overtext">Manager, Minerals Consulting</div>
+                                                    <div class="expertise-title Akk overtext">Area of Expertise</div>
+                                                    <div class="expertise-para Akk overtext">
+                                                            <p>Process Plants</p>
+                                                    </div>
+                                                    <span class="profile-link Avant overtext">View  Profile <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                                </div>
+                                            </a>
+                                            <div class="home-expert-info">
+                                                <h4 class="name">Eddie McLean</h4>
+                                                <div class="occupation Akk">Manager, Minerals Consulting</div>
+                                            </div>
+                                            <img src="https://ausenco-www-staging.s3.amazonaws.com/upload/user/image/Eddie_McLean_380px20170922202418530.png" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div id="expert_one" class="slide-fade-in-start await-slide home-expert-item box">
+                                            <a style="z-index: 100;" href="/en/jay-chapman">
+                                                <div class="overbox" onclick="location.href='/en/jay-chapman'">
+                                                    <h4 class="name overtext">Jay Chapman (M.Sc., Eng)</h4>
+                                                    <div class="occupation Akk overtext">Global Practice Lead - Pipelines</div>
+                                                    <div class="expertise-title Akk overtext">Area of Expertise</div>
+                                                    <div class="expertise-para Akk overtext">
+                                                            <p>Pipelines</p>
+                                                    </div>
+                                                    <span class="profile-link Avant overtext">View  Profile <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                                </div>
+                                            </a>
+                                            <div class="home-expert-info">
+                                                <h4 class="name">Jay Chapman (M.Sc., Eng)</h4>
+                                                <div class="occupation Akk">Global Practice Lead - Pipelines</div>
+                                            </div>
+                                            <img src="https://ausenco-www-staging.s3.amazonaws.com/upload/user/image/Jay_Chapman_380px20170922212653471.png" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div id="expert_one" class="slide-fade-in-start await-slide home-expert-item box">
+                                            <a style="z-index: 100;" href="/en/joel-shirriff">
+                                                <div class="overbox" onclick="location.href='/en/joel-shirriff'">
+                                                    <h4 class="name overtext">Joel Shirriff </h4>
+                                                    <div class="occupation Akk overtext">VP and GPL Transportation &amp; Logistics</div>
+                                                    <div class="expertise-title Akk overtext">Area of Expertise</div>
+                                                    <div class="expertise-para Akk overtext">
+                                                            <p>Transportation &amp; Logistics</p>
+                                                    </div>
+                                                    <span class="profile-link Avant overtext">View  Profile <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                                </div>
+                                            </a>
+                                            <div class="home-expert-info">
+                                                <h4 class="name">Joel Shirriff </h4>
+                                                <div class="occupation Akk">VP and GPL Transportation &amp; Logistics</div>
+                                            </div>
+                                            <img src="https://ausenco-www-staging.s3.amazonaws.com/upload/user/image/Joel_Shirriff_380px20170922214603568.png" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div id="expert_one" class="slide-fade-in-start await-slide home-expert-item box">
+                                            <a style="z-index: 100;" href="/en/greg-lane">
+                                                <div class="overbox" onclick="location.href='/en/greg-lane'">
+                                                    <h4 class="name overtext">Greg Lane</h4>
+                                                    <div class="occupation Akk overtext">Chief Technical Officer</div>
+                                                    <div class="expertise-title Akk overtext">Area of Expertise</div>
+                                                    <div class="expertise-para Akk overtext">
+                                                            <p>Process Plants</p>
+                                                    </div>
+                                                    <span class="profile-link Avant overtext">View  Profile <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                                </div>
+                                            </a>
+                                            <div class="home-expert-info">
+                                                <h4 class="name">Greg Lane</h4>
+                                                <div class="occupation Akk">Chief Technical Officer</div>
+                                            </div>
+                                            <img src="https://ausenco-www-staging.s3.amazonaws.com/upload/user/image/Greg_Lane_380px20170922210030743.png" />
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="widgetContainer insights-block">
+                                <div class="row">
+
+
+                                    <div id="insights_parent" class="col-sm-6 col-md-12 col-lg-6 widgetItem btn-slide-parent">
+                                        <a id="insights_text" class="global-btn-white rev-btn Avant" href="/en/expert-insights">
+                                            VIEW INSIGHTS<span class="pull-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                            <span id="insights_overlay" class="slide-overlay"></span>
+                                        </a>
+                                    </div>
+                                    <div id="experts_parent" class="col-sm-6 col-md-12 col-lg-6  widgetItem btn-slide-parent">
+                                        <a id="experts_text" class="global-btn-white rev-btn Avant" href="/en/our-experts">
+                                            View Experts<span class="pull-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                            <span id="experts_overlay" class="slide-overlay"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-projects">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="row-md-height">
+                    <div class="col-md-6 col-xs-12 col-md-height home-projects-left">
+                        <div class="row no-gutter">
+                            <div class="projects-banner-title">
+                                <div class="col-md-12 widgetItem">
+                                    <h3>Featured Projects</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widgetContainer home-featured-projects">
+                            <div class="row">
+                                    <div id="project_one" class="slide-fade-in-start await-slide col-sm-6 col-md-6 widgetItem">
+                                        <div class="wrapper1 box">
+                                            <a href="/en/constancia-project">
+                                                <img src="https://ausenco-www-staging.s3.amazonaws.com/upload/user/image/constancia-copper-project_800x70020170922224355204.jpg" alt="" />
+                                                <div class="overbox">
+                                                    <div class="title overtext"> Constancia Copper Project </div>
+                                                    <div class="tagline overtext"> Constancia copper plant achieves average throughput of 80,00 ...</div>
+                                                    <div class="caption_title">
+                                                        <p class="Avant">View this Project</p>
+                                                    </div>
+                                                </div>
+                                                <div class="caption_title">
+                                                    <p>CONSTANCIA COPPER PLANT EPCM  <i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div id="project_one" class="slide-fade-in-start await-slide col-sm-6 col-md-6 widgetItem">
+                                        <div class="wrapper1 box">
+                                            <a href="/en/orlan-platform-retrofits">
+                                                <img src="https://ausenco-www-staging.s3.amazonaws.com/upload/user/image/ExxonNeftegasSak_800x700px20171204231554223.jpg" alt="" />
+                                                <div class="overbox">
+                                                    <div class="title overtext"> Orlan Platform retrofits </div>
+                                                    <div class="tagline overtext"> Orlan is the first production platform installed a the Chayv ...</div>
+                                                    <div class="caption_title">
+                                                        <p class="Avant">View this Project</p>
+                                                    </div>
+                                                </div>
+                                                <div class="caption_title">
+                                                    <p>Orlan Platform retrofits <i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div id="project_one" class="slide-fade-in-start await-slide col-sm-6 col-md-6 widgetItem">
+                                        <div class="wrapper1 box">
+                                            <a href="/en/port-mann-water-supply-tunnel-crossing">
+                                                <img src="https://ausenco-www-staging.s3.amazonaws.com/upload/user/image/port-mann-water-supply-tunnel-crossing_800x70020170923000322282.jpg" alt="" />
+                                                <div class="overbox">
+                                                    <div class="title overtext"> Port Mann Water Supply Tunnel Crossing </div>
+                                                    <div class="tagline overtext"> Award winning water tunnel able to withstand a 1 in 10,000yr ...</div>
+                                                    <div class="caption_title">
+                                                        <p class="Avant">View this Project</p>
+                                                    </div>
+                                                </div>
+                                                <div class="caption_title">
+                                                    <p>PORT MANN WATER SUPPLY TUNNEL ... <i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div id="project_one" class="slide-fade-in-start await-slide col-sm-6 col-md-6 widgetItem">
+                                        <div class="wrapper1 box">
+                                            <a href="/en/moose-river-gold-project">
+                                                <img src="https://ausenco-www-staging.s3.amazonaws.com/upload/user/image/moose-river-gold20171024005004265.jpg" alt="" />
+                                                <div class="overbox">
+                                                    <div class="title overtext"> Moose River Consolidated Gold Project </div>
+                                                    <div class="tagline overtext"> Optimised design reduces cost</div>
+                                                    <div class="caption_title">
+                                                        <p class="Avant">View this Project</p>
+                                                    </div>
+                                                </div>
+                                                <div class="caption_title">
+                                                    <p>Moose River Consolidated Gold ... <i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                <div class="widgetContainer insights-block col-md-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-12 col-lg-6 widgetItem btn-slide-parent">
+                                            <a id="projects_text" class="global-btn-white rev-btn Avant" href="/en/featured-projects">
+                                                View All Projects <span class="pull-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                                <span id="projects_overlay" class="slide-overlay"></span>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-6 col-md-12 col-lg-6  widgetItem btn-slide-parent">
+                                            <a id="search_text" class="global-btn-white rev-btn Avant" href="/en/featured-projects#map-view">
+                                                View Projects Map   <span class="pull-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                                <span id="search_overlay" class="slide-overlay"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-md-height home-projects-right">
+                        <div class="widgetContainer">
+                            <div class="col-sm-7 col-xl-6 widgetItem">
+                                <h2>
+                                    Innovation by example
+                                </h2>
+                                <p class="lead">Read our most recent project summaries and discover how we have added value through innovation, for our clients.</p>
+                            </div>
+                            <div class="col-sm-12 widgetItem">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+<!-- </div> -->
+
+
+<section class="welcome-section">
+
+    <div class="auto-container">
+
+        <div class="row clearfix">
+
+            
+
+            <!--Content Column-->
+
+            <div class="content-column col-md-7 col-sm-12 col-xs-12">
+
+                <div class="inner-column">
+
+                    <h2>Welcome to <span>Industrial &amp; Factory</span></h2>
+
+                    <div class="text">
+
+                        <p>When you give to Our Industry, know your donation is making a difference whether you are supporting our signature Programs professional.</p>
+
+                        <h3>Hsitory in Words</h3>
+
+                        <p>We partner with over 320 amazing seds projects worldwide.There anyone who loves or desires to obtain pain of it is because seds all occasionally circumstances.</p>
+
+                    </div>
+
+                    <a href="#" class="theme-btn btn-style-three">Read More</a>
+
+                </div>
+
+            </div>
+
+            
+
+            <!--image Column-->
+
+            <div class="image-column col-md-5 col-sm-12 col-xs-12">
+
+                <div class="image">
+
+                    <img src="images/resource/image-3.jpg" alt="">
+
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="projects-section" style="background-image:url(images/6.jpg)">
+
+    <div class="auto-container">
+
+        <div class="sec-title centered light">
+
+            <h2>Our Projects</h2>
+
+            <div class="separater"></div>
+
+        </div>
+
+    </div>
+
+    <div class="outer-container">
+
+        <div class="five-item-carousel owl-carousel owl-theme owl-loaded owl-drag">
+
+            
+
+            <!--Portfolio Item Two-->
+
+            
+
+            
+
+            <!--Portfolio Item Two-->
+
+            
+
+            
+
+            <!--Portfolio Item Two-->
+
+            
+
+            
+
+            <!--Portfolio Item Two-->
+
+            
+
+            
+
+            <!--Portfolio Item Two-->
+
+            
+
+            
+
+            <!--Portfolio Item Two-->
+
+            
+
+            
+
+            <!--Portfolio Item Two-->
+
+            
+
+            
+
+            <!--Portfolio Item Two-->
+
+            
+
+            
+
+            <!--Portfolio Item Two-->
+
+            
+
+            
+
+            <!--Portfolio Item Two-->
+
+            
+
+            
+
+        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-3745px, 0px, 0px); transition: 0.5s; width: 7493px;"><div class="owl-item cloned" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/8.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item cloned" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/9.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item cloned" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/10.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item cloned" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/11.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item cloned" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/12.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/8.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/9.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/10.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/11.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/12.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item active" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/8.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item active" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/9.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item active" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/10.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item active" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/11.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item active" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/12.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item cloned" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/8.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item cloned" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/9.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item cloned" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/10.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item cloned" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/11.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div><div class="owl-item cloned" style="width: 344.6px; margin-right: 30px;"><div class="portfolio-item-two">
+
+                <div class="inner-box">
+
+                    <figure class="image-box"><img src="images/gallery/12.jpg" alt=""></figure>
+
+                    <!--Overlay Box-->
+
+                    <div class="overlay-box">
+
+                        <div class="overlay-inner">
+
+                            <div class="content">
+
+                                <h3><a href="projects-detail.html">Pre Construction</a></h3>
+
+                                <div class="tags">Agriculture, Chemical</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div></div></div></div><div class="owl-nav"><div class="owl-prev"><span class="fa fa-angle-left"></span></div><div class="owl-next"><span class="fa fa-angle-right"></span></div></div><div class="owl-dots"><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div></div></div>
+
+    </div>
+
+    
+
+</section>
+
+
+<script type="text/javascript">
+    // global int to keep track of scroll progress
+    var scrollStage = 0;
+    var finalScrollStage = 6;
+    var showingFirstSliderButtons = false;
+    var showingSecondSliderButtons = false;
+
+    $(function () {
+        $(".item-box-btn-slider").hover(function () {
+            revealButton($(this).children().first().children().first());
+        }, function () {
+            if (!$(this).is(":focus")) {
+                resetButton($(this).children().first().children().first());
+            }
+        });
+
+        $(".item-box-btn-slider").focusin(function () {
+            revealButton($(this).children().first().children().first());
+        });
+        $(".item-box-btn-slider").focusout(function () {
+            resetButton($(this).children().first().children().first());
+        });
+
+    });
+
+
+
+</script>
+    </div>
+
+    <!-- Start footer -->
+<footer id="footer" class="webilizeFooter">
+    <div class="top-footer">
+        <div class="container-fluid">
+            <div class="footer-cta">
+                <div class="row no-gutter">
+                    <div class="row-height">
+                        <div class="col-md-2 col-sm-12 col-xs-12 footer-logo col-md-height">
+                            <div class="footer-cta-logo">
+                                <img class="img-responsive" src="/Content/images/ausenco/Ausenco-Logo-Black.png" />
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-12 col-xs-12  col-md-height">
+                            <div class="footer-tagline">
+                                <p>
+                                    Redefining what's possible and delivering value-adding consulting studies, project delivery and asset operations and maintenance solutions to the Minerals & Metals, Oil & Gas and Industrial sectors, globally.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5ths  column footer-quick-links">
+                    <h6 class="footer-header Akk">Quick Links</h6>
+                    <ul>
+                        <li><a class="Akk" href="/en/minerals-metals">Minerals & Metals</a></li>
+                        <li><a class="Akk" href="/en/oil-and-gas">Oil & Gas</a></li>
+                        <li><a class="Akk" href="/en/industrial">Industrial</a></li>
+                        <li><a class="Akk" href="/en/featured-projects">Featured Projects</a></li>
+                        <li><a class="Akk" href="/en/our-experts">Our Experts </a></li>
+                        <li><a class="Akk" href="http://www.ausenco-rylson.com/en/" >Ausenco Rylson </a></li>
+                        <li><a class="Akk" href="https://www.hemmera.com/">Hemmera </a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5ths  column">
+                    <h6 class="footer-header Akk"><a class="Akk" href="/en/news-resources">News & Resources</a></h6>
+                    <ul>
+                        <li><a href="/en/expert-insights">Insights </a></li>
+                        <li><a href="/en/news">News</a></li>
+                        <li><a href="/en/conference-and-technical-papers">Conference & technical papers</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5ths  column">
+                    <h6 class="footer-header Akk"><a class="Akk" href="/en/ausenco-careers">Careers</a></h6>
+                    <ul>
+                        <li><a href="https://ausenco.taleo.net/careersection/careersection/ext/jobsearch.ftl?lang=en">Search Career Opportunities</a></li>
+                        <li><a href="/en/job-categories">Job Categories</a></li>
+                        <li><a href="/en/Graduate-and-student-programs">Graduate/Student Programs</a></li>
+                        <li><a href="/en/employee-career-profiles">Employee profiles</a></li>
+                        <li><a href="/en/working-at-ausenco">Working at Ausenco</a></li>
+                        <li><a href="/en/careers-faqs">Careers FAQs</a></li>
+                            <li><a href="https://www.ausenco.com/en/Careers-at-Hemmera">Careers at Hemmera</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5ths  column">
+                    <h6 class="footer-header Akk"><a class="Akk" href="/en/about-us">About Ausenco</a></h6>
+                    <ul>
+                        <li><a href="/en/about-us">About us</a></li>
+                        <li><a href="/en/Decouvrez-Ausenco">Découvrez Ausenco </a></li>
+                        <li><a href="/en/core-values">Our Values</a></li>
+                        <li><a href="/en/Leadership">Leadership</a></li>  
+                        <li><a href="/en/Diversity">Diversity</a></li>  
+                        <li><a href="/en/corporate-governance">Corporate governance</a></li>
+                        <li><a href="/en/corporate-sustainability">Sustainability</a></li>
+                        <li><a href="/en/ausenco-foundation">Ausenco Foundation</a></li>
+                        <li><a href="/en/jv-alliances">JVs and alliances</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-5ths  column">
+                    <h6 class="footer-header Akk"><a class="Akk" href="/en/contact-us">Contact Us</a></h6>
+                    <ul>
+                        <li><a href="/en/contact-us">View all global offices</a></li>
+                        <li><a href="/en/contact-us">Connect with us</a></li>
+                    </ul>
+
+                    <div class="share-icons-wrap">
+                        <div class="share-icons">
+                            <a class="footer-sm-icon" target="_blank" href="https://www.linkedin.com/company-beta/48413">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a class="footer-sm-icon" target="_blank" href="https://www.facebook.com/Ausenco/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a class="footer-sm-icon" target="_blank" href="https://twitter.com/ausenco">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a class="footer-sm-icon" target="_blank" href="https://www.youtube.com/user/AusencoVideos">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a class="footer-sm-icon" target="_blank" href="https://www.instagram.com/ausenco">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="bottom-footer">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-copyright">
+                        Copyright © Ausenco 2017. All rights reserved.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-bottom-nav">
+                        <ul>
+                            <li><a href="/en/IT-Support">IT Support</a></li>
+                            <li><a href="/en/sitemap">Site map</a></li>
+                            <li><a href="/en/terms-of-use">Terms of use</a></li>
+                            <li><a href="/en/Privacy-Policy">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End footer -->
+
+<script type="text/javascript">
+    // global int to keep track of scroll progress
+    //var scrolledFooter = false;
+
+    //$(function () {
+    //    document.addEventListener('scroll', function (event) {
+            
+    //        if (!scrolledFooter) {
+    //            var target = $(window);
+    //            var docViewTop = target.scrollTop();
+    //            var docViewBottom = docViewTop + target.height();
+    //            var targetElement = $("#footer");
+    //            var elemTop = targetElement.offset().top;
+    //            if (elemTop < 1.1 * target.height() + docViewBottom) {
+    //                targetElement.addClass("footer-slide");
+    //                targetElement.removeClass("footer-slide-start");
+    //            }
+    //        }
+    //    }, false /*Capture event*/);
+
+    //});
+</script>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26379671-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-26379671-1');
+    </script>
+
+    
+    
+<script>
+    //# sourceURL=tracking.js
+    var uniqueVisitTimeSpan = 0;
+    var waitBeforeSaveVisit = 5; //seconds
+    $(function () {
+        setTimeout(function() {
+            // check visit uniqness
+            var path = window.location.pathname;
+
+            if (path.endsWith("/")) {
+                path = path.slice(0, -1);
+            }
+            var dateStr = localStorage.getItem("Visit-" + path);
+            var pastDate = new Date(1900,1,1);
+            if (dateStr) {
+                pastDate = new Date(dateStr);
+            }
+
+            var date = new Date().getTime();
+
+            pastDate = new Date(pastDate.getTime() + uniqueVisitTimeSpan * 60000);
+            if (pastDate < date) {
+                // TrackVisit
+               $.ajax({
+                    type: "POST",
+                    url: "/sitevisit",
+                    data: { id: path, __RequestVerificationToken: gettoken()},
+                    dataType: 'json',
+                    contentType: 'application/x-www-form-urlencoded; charset=utf-8',
+                    success: function () {
+                        localStorage.setItem("Visit-" + path, date);
+                    }
+                });
+            }
+        }, waitBeforeSaveVisit * 1000);
+
+        function gettoken() {
+            var token = '<input name="__RequestVerificationToken" type="hidden" value="XnowacRZ-7HA2HsaY2El3z8trb3MNbI9ucfMTPJMGC8SrmV09rnRq6x_xZVPyEJzL3nzqImd0pgEiAih-XzS_6krfgQ73HTeZ0sUp8Ycr701" />';
+            token = $(token).val();
+            return token;
+        }
+    });
+
+</script>
+</body>
+</html>

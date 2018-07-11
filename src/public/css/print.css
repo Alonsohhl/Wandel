@@ -1,0 +1,190 @@
+@media print {
+   
+    header {
+        height: 70px;        
+    }
+
+    header .container {
+        height: 75px;
+        border-bottom: 3px solid #f7c117;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        display: block;
+        color: #000000;
+    }
+
+    a:after{
+        content:" (" attr(href) ") ";
+        font-size:0px;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .hexagon {
+        display: none;
+    }
+    
+    .space30 {
+        margin: 0px;
+    }
+
+    .orangeprogress {
+        display:none;
+    }
+        
+    #header-top,
+    #mainNav,
+    #search-courses,
+    .general-breadcrumb,
+    .left-sidebar,
+    #course-sidebar {
+        display: none;
+    }
+
+    #logo {
+        font-size: 0px;
+    }
+
+    footer {
+        border-top: 3px solid #f7c117;
+    }
+
+    footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+        color: #000000 !important;
+    }
+
+    footer .main-footer {
+        padding-top: 15px;
+    }
+
+    footer .logo {
+        margin: 0px;
+    }
+
+    footer .logo .subtitle {
+        padding-top: 15px;
+    }
+
+    footer .newsletter,
+    .footer-menu,
+    .social-icons,
+    footer img {
+        display: none;
+    }
+
+    .footer-right .row > div {
+        display: none;
+    }
+
+    .footer-right .row > div:nth-of-type(3) {
+        margin-top: 10px;
+    }
+
+    .footer-right .row > div h4,
+    .footer-right .row > div h6 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .top-container,
+    .sideicon {
+        display: none;
+    }
+
+    .singletraining {
+        margin: 0px 0px 15px;
+        padding: 0px;
+        border: none;
+        height: auto !important;
+    }
+
+    .about-logo {
+        display: none;
+    }
+
+    .stats-wrap {
+        margin: 0px;
+    }
+        
+    .stats-wrap .stats-item {
+        display: inline-block;
+        width: 25%;
+        float: left;
+        padding-bottom: 15px;
+    }
+
+    .testiitem {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .testiblock {
+        padding: 0px;
+        margin: 0px;
+        min-height: 1px;
+    }
+
+    .testiblock:before {
+        content: none;
+    }
+
+    .course-wrapper a.text-right {
+        display: none;
+    }
+
+    .course-wrapper .contents {
+        padding: 0px;
+        border: none;
+    }
+    
+    .printer,
+    .course-wrapper .image, 
+    .course-details .top-banner .image,
+    .course-details .top-infor .icon-down-black {
+        display: none;
+    }
+
+    .course-wrapper .top-infor .contact a {
+        display: none;
+    }
+
+    .course-details .top-banner {
+        padding: 15px;
+        border: 4px #f0f0f0 solid;
+    }
+
+    .course-details .top-banner .hours, 
+    .course-details .top-banner .button {
+        border: none;
+    }
+
+    .course-details .top-infor {
+        padding: 5px 0px;
+    }
+
+    .course-details .top-banner .price {
+        padding: 0px 0px 25px;
+    }
+
+    .course-details .detail-contact .content-wrapper {
+        padding: 0px;
+        margin-bottom: 15px;
+    }
+
+    .course-details .detail-contact .content-wrapper .row > div {
+        padding: 0px;
+    }
+
+}

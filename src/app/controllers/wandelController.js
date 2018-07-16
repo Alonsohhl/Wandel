@@ -19,7 +19,7 @@ controller.contacto = (req, res) => {
 
 controller.productos = (req, res) => {     
     res.render('wandel/productos');
-    console.log('Carga contacto cargando');
+    console.log('Carga productos cargando');
 
 };
 

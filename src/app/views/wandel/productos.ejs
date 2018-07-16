@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <title>Wandel - Contacto</title>
+    <meta charset="utf-8">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <%- include('includes/head'); %>
+    <link rel="stylesheet" href="css/responsi.css">
+
+    <!--[if lt IE 9]>
+        <script src="js/vendor/html5shiv.min.js"></script>
+        <script src="js/vendor/respond.min.js"></script>
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+        <!--[if lt IE 9]>
+            <div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+        <![endif]-->
+        <div class="preloader">
+            <div class="preloader_image"></div>
+        </div>
+        <!-- search modal -->
+        <div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+                <i class="rt-icon2-cross2"></i>
+            </span>
+        </button>
+            <div class="widget widget_search">
+                <form method="get" class="searchform search-form form-inline" action="./">
+                    <div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input"> </div> <button type="submit" class="theme_button">Search</button> </form>
+            </div>
+        </div>
+        <!-- Unyson messages modal -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+            <div class="fw-messages-wrap ls with_padding">
+                <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+                <!--
+            <ul class="list-unstyled">
+                <li>Message To User</li>
+            </ul>
+            -->
+            </div>
+        </div>
+        <!-- eof .modal -->
+        <!-- wrappers for visual page editor and boxed version of template -->
+        <div id="canvas">
+            <div id="box_wrapper">
+                <!-- template sections -->
+               
+                <%- include('includes/header', {option: 'productos'}); %>
+                
+                <section class="">
+                    <div class="full-size">
+                        <div class="cchel2 cseq cvcenter" id="seq" onclick="myFunction()">
+                            <div class="cvcenterinner">
+                                <span class="stitlecaja" style="opacity: 1;">
+                                    <span>INSUMOS DE LIMPIEZA</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="cchel2 cseq cvcenter" id="seq" onclick="myFunction2()">
+                                <div class="cvcenterinner">
+                                    <span class="stitlecaja" style="opacity: 1;">
+                                        <span>INSUMOS TEXTILES</span>
+                                    </span>
+                                </div>
+                        </div>
+                        <div id="snackbar">
+                            <ol id="double">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Coca Cola</li>
+                                <li>Aceite de Pino </li>
+                                <li>Acido Cítrico</li>
+                                <li>Acido Fosfórico</li>
+                                <li>Antiespumante</li>
+                                <li>Butilglicol</li>
+                                <li>Carbopol</li>
+                                <li>Ceras Parafinas</li>
+                                <li>Coalescente </li>
+                                <li>Coumarina</li>
+                                <li>Creosota Crisilica Inglesa</li>
+                                <li>Desengrasantes</li>
+                                <li>Emulgador 2106</li>
+                                <li>Espesantes</li>
+                                <li>Fragancias </li>
+                                <li>Glicerina USP</li>
+                                <li>Glucosa</li>
+                                <li>Hipoclorito de Sodio 7.5%</li>
+                                <li>Kleber</li>
+                                <li>Lauriles al 28% y 70%</li>
+                                <li>Nonyl Fenol 06 -10 </li>
+                                <li>Óxidos de Hierro</li>
+                                <li>Peróxido de Hidrogeno</li>
+                                <li>Pigmentos</li>
+                                <li>Preservantes</li>
+                                <li>Resina Colofonia</li>
+                                <li>Siliconas a la Grasa y Agua</li>
+                                <li>Soda Caustica Escamas / Microperlas</li>
+                                <li>Suavizantes</li>
+                                <li>Trietanolamina</li>
+                                <li>Vaselina Liquida</li>
+
+
+                            </ol>
+                        </div>
+                        <div id="snackbar2">
+                            <ul id="double">
+                                    <li>Ópticos</li>
+                                    <li>Blanqueadores</li>
+                                    <li>Detergentes</li>
+                                    <li>Suavizantes</li>
+                                    <li>Fijadores</li>
+                                    <li>Antiespumantes</li>    
+                            </ol>
+                        </div>
+
+                    </div>
+                    
+                </section>
+                <%- include('includes/footer')%>
+            </div>
+            <!-- eof #box_wrapper -->
+        </div>
+        <!-- eof #canvas -->
+        <script data-cfasync="false" src="/cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script src="js/compressed.js"></script>
+        <script src="js/main.js"></script>
+        <!-- <script src="js/switcher.js"></script> -->
+        <!-- Google Map Script -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTwYSMRGuTsmfl2z_zZDStYqMlKtrybxo"></script>
+
+        <script>
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+        
+        function myFunction2() {
+            var x = document.getElementById("snackbar2");
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+
+        </script>
+        
+    </body>
+    
+    </html>    

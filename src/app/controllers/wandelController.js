@@ -17,6 +17,18 @@ controller.contacto = (req, res) => {
 
 };
 
+controller.productos = (req, res) => {     
+    res.render('wandel/productos');
+    console.log('Carga contacto cargando');
+
+};
+
+controller.nosotros = (req, res) => {     
+    res.render('wandel/nosotros');
+    console.log('Carga contacto cargando');
+
+};
+
 /*
 controller.test = (req, res) => {     
     res.render('galtec/index2');

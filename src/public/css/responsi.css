@@ -7,3 +7,154 @@
 @media screen and (min-width: 1200px) {
   .insights-banner-title, .experts-banner-title, .projects-banner-title {
     padding: 96px 0 30px 0; } }
+
+.cproduct:hover .stitlecaja, .cchel2:hover .stitlecaja, .cchel2agr:hover .stitlecaja {
+  background-color: transparent;
+  border-color: white;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+  border-radius: 4px; }
+
+#snackbar {
+  visibility: hidden;
+  min-width: 60vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  background-color: #19bcdb;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1001;
+  top: 10%;
+  font-size: 17px; }
+
+#snackbar li {
+  line-height: 1.5em;
+  float: left;
+  display: inline; }
+
+@media screen and (max-width: 320px) {
+  #snackbar #double li {
+    width: 100%; } }
+
+@media screen and (min-width: 1200px) {
+  #snackbar #double li {
+    width: 50%; } }
+
+#snackbar2 {
+  visibility: hidden;
+  min-width: 60vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  background-color: #19bcdb;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1001;
+  top: 10%;
+  font-size: 17px; }
+
+#snackbar2 li {
+  line-height: 2.5em;
+  float: left;
+  display: inline; }
+
+#snackbar2.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s; }
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s; }
+
+@-webkit-keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0; }
+  to {
+    top: 10%;
+    opacity: 1; } }
+
+@keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0; }
+  to {
+    top: 10%;
+    opacity: 1; } }
+
+@-webkit-keyframes fadeout {
+  from {
+    top: 10%;
+    opacity: 1; }
+  to {
+    top: 0;
+    opacity: 0; } }
+
+@keyframes fadeout {
+  from {
+    top: 10%;
+    opacity: 1; }
+  to {
+    top: 0;
+    opacity: 0; } }
+
+.stitlecaja {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  height: 68px;
+  line-height: 68px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 306px;
+  display: inline-block;
+  border: 2px solid black;
+  border-top-color: black;
+  border-right-color: black;
+  border-bottom-color: black;
+  border-left-color: black;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+
+.cchel2:hover, .cchel2agr:hover {
+  -webkit-transform: scale(1.01, 1.01);
+  transform: scale(1.01, 1.01);
+  opacity: 1 !important;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7); }
+
+.full-size {
+  height: 80vh; }
+
+.cvcenter {
+  display: table;
+  height: 100%;
+  width: 100%; }
+
+.cchel2, .cchel2agr {
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer; }
+
+.cseq {
+  background-image: url(../images/prod/seq.jpg); }
+
+.cseq .cvcenterinner {
+  display: table-cell;
+  vertical-align: middle; }
+
+.cseq .cvcenterinner .cchel2 .stitlecaja, .cseq .cvcenterinner .cchel2agr .stitlecaja {
+  font-size: 16px;
+  width: 430px; }

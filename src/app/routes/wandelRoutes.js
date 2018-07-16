@@ -1,10 +1,11 @@
 const router = require('express').Router();
 
-const galtecController = require('../controllers/wandelController');
+const wandelController = require('../controllers/wandelController');
 
-router.get('/', galtecController.index2);
-router.get('/contacto', galtecController.contacto);
-
+router.get('/', wandelController.index2);
+router.get('/contacto', wandelController.contacto);
+router.get('/productos', wandelController.productos);
+router.get('/nosotros', wandelController.nosotros);
 
 /*router.get('/test', galtecController.test);
 router.get('/contacto', galtecController.contacto);

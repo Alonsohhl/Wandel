@@ -26,7 +26,7 @@ $break-large: 1200px;
     border-radius: 4px;
 }
 
-#snackbar {
+#snackbar3,#snackbar {
     visibility: hidden;
     min-width: 60vw;
     margin-left: 15vw;
@@ -41,19 +41,50 @@ $break-large: 1200px;
    
     top: 10%;
     font-size: 17px;
+    overflow: auto;
+
+    
+    -webkit-animation: fadeout 0.5s 2.5s;
+    animation: fadeout 2.5s;
+
+    a{
+        font-size: 30px;
+        margin: 5px;
+        font-family: 'Roboto', sans-serif;
+       font-weight: 700;
+    }
 
     li{
-        line-height:1.5em;
-        float:left;
-        display:inline;
+        line-height:2em;
+        font-weight: 500;
+        //float:left;
+       // display:inline;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+        list-style-type: none;
+
+        -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+        -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+        -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+        -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+        transition: font-size 0.3s ease, background-color 0.3s ease;
+     //   display: block;
+     //   width: 200px;
+
+        &:hover{
+            font-size: 17px;
+            background: #162947;
+        }
     }
+    
+
     #double li  { 
         @media screen and (max-width: $break-small) {
             width:100%;
             
           }
         @media screen and (min-width: $break-large) {
-            width:50%;
+            width:33%;
         }
         
         
@@ -76,11 +107,11 @@ $break-large: 1200px;
     top: 10%;
     font-size: 17px;
 
-    li{
+    /*li{
         line-height:2.5em;
         float: left;
         display:inline;
-    }
+    }*/
     
 
     
@@ -93,13 +124,11 @@ $break-large: 1200px;
 }
 
 
-#snackbar.show {
+#snackbar3.show,#snackbar.show {
     visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    -webkit-animation: fadein 0.5s;//, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s;//, fadeout 0.5s 2.5s;
 }
-
-
 
 
 
@@ -184,6 +213,23 @@ $break-large: 1200px;
     cursor: pointer;
 }
 .cseq {
+    background-image: url(../images/prod/seq2.jpg);
+    .cvcenterinner {
+        display: table-cell;
+        vertical-align: middle;
+
+
+
+        .cchel2 .stitlecaja, .cchel2agr .stitlecaja {
+            font-size: 16px;
+            width: 430px;
+        }
+        
+        
+
+    }
+}
+.cseq2 {
     background-image: url(../images/prod/seq.jpg);
     .cvcenterinner {
         display: table-cell;

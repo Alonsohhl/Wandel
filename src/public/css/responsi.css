@@ -14,7 +14,7 @@
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
   border-radius: 4px; }
 
-#snackbar {
+#snackbar3, #snackbar {
   visibility: hidden;
   min-width: 60vw;
   margin-left: 15vw;
@@ -27,20 +27,37 @@
   position: fixed;
   z-index: 1001;
   top: 10%;
-  font-size: 17px; }
+  font-size: 17px;
+  overflow: auto;
+  -webkit-animation: fadeout 0.5s 2.5s;
+  animation: fadeout 2.5s; }
 
-#snackbar li {
-  line-height: 1.5em;
-  float: left;
-  display: inline; }
+#snackbar3 a, #snackbar a {
+  font-size: 30px;
+  margin: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; }
+
+#snackbar3 li, #snackbar li {
+  line-height: 2em;
+  font-weight: 500;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  list-style-type: none;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease; }
+
+#snackbar3 li:hover, #snackbar li:hover {
+  font-size: 17px;
+  background: #162947; }
 
 @media screen and (max-width: 320px) {
-  #snackbar #double li {
+  #snackbar3 #double li, #snackbar #double li {
     width: 100%; } }
 
 @media screen and (min-width: 1200px) {
-  #snackbar #double li {
-    width: 50%; } }
+  #snackbar3 #double li, #snackbar #double li {
+    width: 33%; } }
 
 #snackbar2 {
   visibility: hidden;
@@ -55,22 +72,22 @@
   position: fixed;
   z-index: 1001;
   top: 10%;
-  font-size: 17px; }
-
-#snackbar2 li {
-  line-height: 2.5em;
-  float: left;
-  display: inline; }
+  font-size: 17px;
+  /*li{
+        line-height:2.5em;
+        float: left;
+        display:inline;
+    }*/ }
 
 #snackbar2.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s; }
 
-#snackbar.show {
+#snackbar3.show, #snackbar.show {
   visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s; }
+  -webkit-animation: fadein 0.5s;
+  animation: fadein 0.5s; }
 
 @-webkit-keyframes fadein {
   from {
@@ -149,12 +166,23 @@
   cursor: pointer; }
 
 .cseq {
-  background-image: url(../images/prod/seq.jpg); }
+  background-image: url(../images/prod/seq2.jpg); }
 
 .cseq .cvcenterinner {
   display: table-cell;
   vertical-align: middle; }
 
 .cseq .cvcenterinner .cchel2 .stitlecaja, .cseq .cvcenterinner .cchel2agr .stitlecaja {
+  font-size: 16px;
+  width: 430px; }
+
+.cseq2 {
+  background-image: url(../images/prod/seq.jpg); }
+
+.cseq2 .cvcenterinner {
+  display: table-cell;
+  vertical-align: middle; }
+
+.cseq2 .cvcenterinner .cchel2 .stitlecaja, .cseq2 .cvcenterinner .cchel2agr .stitlecaja {
   font-size: 16px;
   width: 430px; }
